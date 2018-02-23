@@ -103,7 +103,7 @@ section {
   background-image: url("../images/landscape.jpg"); /* to get the path right, you need to think where you are first, you are in the css folder*/
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-attachment: fixed;
   height: 100vh;
   opacity: 0.8;
