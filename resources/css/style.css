@@ -1,0 +1,179 @@
+body, html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* fonts/ main colors & main styles */
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(font/OpenSans-Light.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(font/OpenSans-Regular.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(font/OpenSans-SemiBold.ttf) format('truetype');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --main-bg-color:hsla(212, 40%, 62%, 1);
+  --main-ft-color: rgb(112,22,22);
+  --sub-ft-color: #444;
+  --sub2-ft-color: #777;
+  --sub3-ft-color: #888;
+  --sub4-ft-color: rgba(6,40,61,1);
+}
+
+h1 {
+  font-size: 4rem;/* This is messing up the lowest width for smartphones*/
+  font-weight: bold;
+  color: var(--main-ft-color);
+  border-bottom: rgba(158,158,158, 0.7) solid 1px;
+  display: inline-block;
+}
+.hr--color {
+  border-color: rgba(6,40,61,0.4);
+}
+
+h2 {
+  color: var(--sub-ft-color);
+  font-weight: 400;
+  margin: 0rem 0rem 1rem 0rem;
+}
+h3 {
+  color: var(--sub2-ft-color);
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0rem 0rem 0.5rem 0rem;
+}
+
+p {
+  color: var(--sub3-ft-color);
+  font-size: 0.935rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0.5rem 0rem 0rem 0rem;
+}
+ul {
+  padding: 1rem 0rem;
+  font-size: 1rem;
+  color: var(--sub4-ft-color);
+  font-weight: 300;
+  line-height: 1.5;
+  list-style: none;
+}
+.focus {
+  color:#555;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+section {
+  padding: 1rem 0rem 2rem 0rem;
+}
+.container-fluid {
+  padding: 0;
+}
+.section--blue {
+  background-color: var(--main-bg-color);
+}
+.section--white {
+  white;
+}
+
+/* Banner & Header Section*/
+.container-fluid__banner {
+  background-image: url("../images/landscape.jpg"); /* to get the path right, you need to think where you are first, you are in the css folder*/
+  background-position:;
+  background-repeat: none;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+.text-box {
+text-align: center;
+margin: 1rem 0rem 1rem 0rem;
+}
+.text-box--height{
+  height: 100vh;
+  padding-top: 17%;
+}
+.text-box-margin {
+  margin-top: -100vh;
+}
+.text-box__text--color{color: var(--main-ft-color);}
+.text-box__text--fontweight {font-weight: 300;}
+.text-box__text--small{font-size: 1.125rem;}
+.text-box__text--margin{margin: 0rem 0rem 1rem 0rem;}
+.text-box__text--fontsize {font-size: 2.5rem;}
+.text-box__p-sm {font-size: 0.85rem;}
+.text-box__p-color {color: var(--sub4-ft-color);}
+.text-box__p-fontweight {font-weight: bold;}
+
+
+/* main section: About Me*/
+.container-fluid--margin {
+}
+.container-fluid--align {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  width: 65%;
+}
+
+.row-width-30 {
+  flex: 1 1 30%;
+}
+.border {
+}
+.height {
+  height: auto;/*take away later*/
+}
+.col--margin {
+  margin: 1rem 1rem;
+}
+
+.col--picture {
+  width: 25%;
+  height: auto;
+  overflow: hidden;
+}
+
+.col--picture img {
+max-width:100%;
+height: auto;
+}
+
+
+/* main section: Work Experience */
+
+
+/* footer */
+footer {
+  background-color: black;
+  height: 400px;
+}
