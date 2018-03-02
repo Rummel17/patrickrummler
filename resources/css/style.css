@@ -112,7 +112,7 @@ ul {
 section {padding: 1rem 0rem 3rem 0rem;}
 
 .container-fluid {padding: 0;}
-.section--blue {background-color: var(--main-bg-color);}
+.section--color {background-color: var(--main-bg-color);}
 .section--white {background-color: white;}
 
 /* Banner & Header Section*/
