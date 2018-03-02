@@ -142,7 +142,13 @@ margin: 1rem 0rem 1rem 0rem;
 .p--color{color: var(--sub-ft-color);}
 .text-box__text--margintop {margin-top: 1rem}
 
-/* navigation bar*/
+/* navigation bar with arrow*/
+
+/* bar is fixed to the side
+could not separate arrow and navbar
+were unable to create a position: relative, position: absolute, position: fixed
+structure, to make fixed start furhter down the page as intended. Worekd on learning Page
+but not on this page */
 .navbar {
   position: fixed;
   top: 12%;
@@ -194,7 +200,8 @@ li.nav__animation {
 .navbar ul.nav.nav-tabs li {
   background-color: #062C42;
 }
-
+/* the border-radius 4px turned out to be a pain in the ass because there are so
+many different states involeved all need to be adjusted */
 .navbar ul.nav.nav-tabs li.active a:hover, .navbar ul.nav.nav-tabs li.active {
   text-decoration: none;
   background-color: var(--main-ft-color-red);
@@ -215,6 +222,9 @@ ul.nav.nav-tabs, ul.nav.nav-tabs a {
   margin: 0;
 }
 
+/*this one drove me crazy, I could not find the state that needed to be
+adjusted for the round corners. Eventually, I found it with dev Tools
+and all I needed to do was write the path down*/
 ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.nav--borderbottom.active {
   background-color: var(--main-ft-color-red);
     border-radius: 0px 0px 4px 4px;
@@ -255,6 +265,26 @@ height: auto;
 .experience {
   padding: 0;
   margin: 0.5rem 0rem 0rem 0rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  color: var(--main-ft-color-red); /*#9c1e1e*/
+  font-weight: normal;
+  font-size: 1rem;
+  margin: 1rem 0rem 1rem 0rem;
+}
+.location i {
+  margin-right: 0.5rem;
+}
+.location .fa-link {
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+  border-left: var(--main-ft-color-red) solid 1px;
+}
+.location a {
+  color: var(--main-ft-color-red);
 }
 
 /* size of the stars*/
@@ -396,7 +426,6 @@ div.project:hover .project__header__text {
 div.project div.project__header h3 {
   transition: all 250ms linear 0ms;
 }
-
 
 /* footer */
 footer {
