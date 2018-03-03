@@ -126,6 +126,17 @@ section {padding: 1rem 0rem 3rem 0rem;}
   background-attachment: fixed;
   height: 100vh;
 }
+/* media query for ipads
+banner will not be shown with code above */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape){
+.container-fluid__banner {
+  background-position: center;
+  background-attachment: local;
+}
+}
 
 .text-box {
 text-align: center;
