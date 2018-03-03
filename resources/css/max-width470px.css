@@ -28,7 +28,7 @@
   .row-column--align {
     align-items: center;
   }
-  .hide--sm, .hide--sm__link, .hide--sm--me, .hide--sm__text{display: none;}
+  .hide--sm, .hide--sm__link, .hide--sm__me, .hide--sm__text{display: none;}
 
  .experience {
     margin: 0;

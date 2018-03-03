@@ -4,16 +4,16 @@
 
 
   /* navbar */
-.navbar {left: 85%;}
+.navbar {left: 86%;}
 
-.navbar ul.nav.nav-tabs li {width: 6.5rem;}
+.navbar ul.nav.nav-tabs li {width: 6rem;}
 .navbar ul.nav.nav-tabs li a, .navbar ul.nav.nav-tabs li a:hover {
-  padding: 1.75rem 0rem;
-  font-size: 1rem;
+  padding: 1.5rem 0rem;
+  font-size: 0.935rem;
 }
 
 .nav__animation i {
-  padding: 1rem 0rem;
+  padding: .75rem 0rem;
   font-size: 2rem;
 }
   /* main section  */
@@ -21,24 +21,24 @@
     background-attachment: local;
   }
   hr {margin: 2.5rem 0rem 1.5rem 0rem;}
-  .row {width: 65%;}
+  .row {width: 68%;}
   section {padding-bottom: 2rem;}
   .row--margintop {margin-top: .5rem;}
-  .text--align {text-align: center;}
   .text--padding {padding: 2rem 0rem 1rem 0rem}
-
   .row--row{flex-flow: row;}
   .col-sm-6 {width: 100%;}
-
+  .hide--pic, .hide--Rhein {display: none;}
   .experience {
     margin: 0;
     padding: 0;
   }
 
+  p {text-align: justify;}
+
   ul.skills.skills--nopadding {padding-top: 1rem;}
   .col-sm-6--marginbottom {margin-bottom: 1rem;}
   .row--margintop2 {margin-top: 1rem;}
-  footer {height: 18rem;}
+  footer {height: 25rem;}
 
 
   /* project section */
