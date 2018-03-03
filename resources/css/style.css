@@ -149,6 +149,11 @@ could not separate arrow and navbar
 were unable to create a position: relative, position: absolute, position: fixed
 structure, to make fixed start furhter down the page as intended. Worekd on learning Page
 but not on this page */
+
+.navbar--smartphone {
+  display: none;
+}
+
 .navbar {
   position: fixed;
   top: 12%;
@@ -173,7 +178,7 @@ but not on this page */
   text-decoration: none;
   color: white;
   font-weight: normal;
-  padding: 2.25rem 0rem;
+  padding: 2.25rem 0rem;/* height of the nav */
 }
 
 li.nav__animation {
@@ -196,10 +201,11 @@ li.nav__animation {
    50% {top: 10px;}
    100% {top: 0px;}
 }
+/* arrow outside of navbar */
+.navbar ul.nav.nav-tabs li {background-color: #062C42;}
 
-.navbar ul.nav.nav-tabs li {
-  background-color: #062C42;
-}
+
+
 /* the border-radius 4px turned out to be a pain in the ass because there are so
 many different states involeved all need to be adjusted */
 .navbar ul.nav.nav-tabs li.active a:hover, .navbar ul.nav.nav-tabs li.active {
@@ -237,8 +243,8 @@ ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.nav--borderbottom.active {
 .container-fluid--align {
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 .row {
   display: flex;
@@ -325,9 +331,25 @@ but not on li*/
 /*project section */
 .project {
 width: 100%;
-height: 270px;
+height: auto;
 overflow: hidden;
 position: relative;
+}
+
+/*  transition effect directely on element */
+.project img {
+  max-width: calc(100% + 10px);
+  height: auto;
+  display: block;
+  opacity: 1;
+  transform:translate3d(-10px, 0px, 0px);/* set it to the left on purpose*/
+  transition: all 250ms linear 0ms;
+
+}
+/* values on hover effect for better animation */
+.project:hover img{
+  opacity: 0.7;
+  transform:translate3d(0px, 0px, 0px);/* sets it back to original position*/
 }
 
 div.project div.project__link-box {
@@ -336,7 +358,7 @@ div.project div.project__link-box {
   background-color: #6e1719;
   position: absolute;
   top: 0%;
-  right: 0%;
+  right:0%;
   border-radius: 0px 0px 0px 4px;
   opacity: 0.9;
   text-align: center;
@@ -349,28 +371,12 @@ div.project div.project__link-box i {
   font-size: 1.125rem;
   padding:0rem 0rem 0.1rem 0.3rem;
 }
-/*  transition effect directely on element */
-.project img {
-  max-width: auto;
-  height: 100%;
-  display: block;
-  opacity: 1;
-  padding-left: 0rem;
-  transform:translate3d(-10px, 0px, 0px);/* set it to the left on purpose*/
-  transition: all 250ms linear 0ms;
-  backface-visibility: hidden;
-}
-/* values on hover effect for better animation */
-.project:hover img{
-  opacity: 0.7;
-  transform:translate3d(0px, 0px, 0px);/* sets it back to original position*/
-}
 
 /* overlay for faded red color
 over effect directly on project*/
 .project:hover .project__overlay {
   width: 100%;
-  left: 0;
+  left:0;
 }
 
 /* transition on element directly */
@@ -426,7 +432,6 @@ div.project:hover .project__header__text {
 div.project div.project__header h3 {
   transition: all 250ms linear 0ms;
 }
-
 /* footer */
 footer {
   background-color: var(--sub-ft-color);

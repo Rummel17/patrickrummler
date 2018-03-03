@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link href="./resources/css/style.css" text="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="(max-width:470px)" href="resources/css/max-width470px.css">
+    <link rel="stylesheet" type="text/css" media="(min-width:400px)" href="resources/css/min-width400px.css">
+    <link rel="stylesheet" type="text/css" media="(max-width:600px)" href="resources/css/min-width471px_max-width600px.css">
+    <link rel="stylesheet" type="text/css" media="(max-width:768px)" href="resources/css/min-width601px_max-width768px.css">
+    <link rel="stylesheet" type="text/css" media="(max-width:1024px)" href="resources/css/min-width769px-max-width1024px.css">
     <link rel="apple-touch-icon" sizes="57x57" href="./resources/images/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./resources/images/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./resources/images//apple-icon-72x72.png">
@@ -29,19 +34,24 @@
 
     <header>
       <div class="container-fluid container-fluid__banner container-fluid--align">
+
         <div class="row">
           <div class="col-sm-12">
+
             <div class="text-box text-box--padding-bottom">
               <h1> Patrick Rummler </h1>
               <h3> "A nature loving webartist looking for adventures"</h3>
               <h2> Online Resumee</h2>
             </div>
+
           </div>
+
         </div>
 
       </div>
 
-      <nav id="myScrollspy" class="navbar">
+      <!--navbar-->
+      <nav id="myScrollspy" class="navbar navbar--desktop">
         <ul class="nav nav-tabs" >
           <li class="nav__animation nav--bordertop sticky"><i class="fas fa-angle-down"></i></li>
           <li><a href="#work">Work</a></li>
@@ -50,7 +60,8 @@
           <li><a href="#projects">Projects</a></li>
           <li class="nav--borderbottom"><a href="#contact" class="nav--borderbottom">Contact</a></li>
         </ul>
-        </nav>
+      </nav>
+
 
     </header>
 
@@ -70,21 +81,21 @@
         </div>
 
         <div class="row row-width-30">
-          <div class="col-sm-2 col--margin col--picture">
+          <div class="col-sm-2 col--margin col--picture hide--sm">
             <img src="./resources/images/auge2.png">
           </div>
           <div class="col-sm-6 col--margin">
-            <h2 class="text--color text--margin">Take a Closer Look</h2>
-            <p>I am a front-end developer with a fundamental knowledge of all techniques to make your projects a success. I love design and like to go the extra mile to make every little detail perfect resulting in a great user experience.
-            </p><p> I have a fundamental knowledge of asia and especially Japan having lived and worked for more than 14 years in Japan. I know the Japanese and the European working culture by heart and got what it takes to lead and manage projects from start to end.</p>
-            <p> If you are looking for a front-end developer with special knowledge in Asia/Japan, don't look any further and contact me.</p>
+            <h2 class="text--color text--margin text--align">Take a Closer Look</h2>
+            <p>I am a front-end developer with a fundamental knowledge of all techniques to make your projects a success. I love design and like to go the extra mile to make every little detail perfect resulting in a great user experience.</p>
+            <p class="hide--sm"> I have a fundamental knowledge of asia and especially Japan having lived and worked for more than 14 years in Japan. I know the Japanese and the European working culture by heart and got what it takes to lead and manage projects from start to end.</p>
+            <p class="hide--sm"> If you are looking for a front-end developer with special knowledge in Asia/Japan, don't look any further and contact me.</p>
           </div>
-          <div class="col-sm-4 col--margin">
+          <div class="col-sm-4 col--margin hide--sm">
             <h2 class="text--color text--margin">That's Me</h2>
             <p class="p--sm"><span class="focus">Name:</span></br>Patrick Rummler</p>
             <p class="p--sm"><span class="focus">Favorite Beer Style:</span></br>IPA, Session IPA and Lager</p>
             <p class="p--sm"><span class="focus">Video Games:</span></br>Bubble Bobble, Bomberman</p>
-            <p class="p--sm"><span class="focus">Free Time Activities</span></br>Hiking & Sea-Trekking</p>
+            <p class="p--sm"><span class="focus">Free Time Activities</span></br>Hiking &#38; Sea-Trekking</p>
             <p class="p--sm"><span class="focus">Location:</span></br>Saarland/Germany</br>Tokyo/Japan</p>
 
           </div>
@@ -110,63 +121,60 @@
 
         <!-- freelance section -->
 
-        <div class="row row-width">
+        <div class="row row-width row-column">
 
           <div class="col-sm-4">
-            <p class="p--fontweight p--color">Freelance</p>
+            <p class="p--fontweight p--color p--fontweight--sm p--fontsize--sm p--color--sm">Freelance</p>
           </div>
           <div class="col-sm-8">
             <p class="p--fontweight p--color"> Web Developer, Project Manager and Consultant</p>
           </div>
         </div>
-        <div class="row row-width">
+        <div class="row row-width row-column">
           <div class="col-sm-4">
             <p class="p--sm p--color"> September 2017 - Now</p>
           </div>
           <div class="col-sm-8">
             <ul class="experience">
-              <li><span class="text--fontweight2">Planing and creation of web based solutions:</span>
+              <li class="hide--sm"><span class="text--fontweight2">Planing and creation of web based solutions:</span>
               </br>
               <span class="p--sm ">Homepages, android/iOS apps, UI design, social network solutions,
-                Creation of functional specifications, wireframes,logo design etc.</span></li>
-              </br>
-              <li><span class="text--fontweight2">Project Execution:</span>
-              <br/>
+                Creation of functional specifications, wireframes,logo design etc.</br></span></li>
+              <li class="hide--sm"><br/><span class="text--fontweight2">Project Execution:</span>
+
               <span class="p--sm">Project management, scheduling, budget management/controlling, concept and creation of test scripts etc.</span></li>
-              <li class="location"><i class="fas fa-map-marker"></i>Germany and Japan</li>
-
-
+              <li class="location"><i class="fas fa-map-marker"></i>Germany &#38; Japan</li>
             </ul>
           </div>
         </div>
 
         <!-- veeva section -->
 
-        <div class="row row-width row--margintop">
+        <div class="row row-width row--margintop row-column">
 
           <div class="col-sm-4">
-            <p class="p--fontweight p--color">Veeva K.K.
-            </br>Zink Ahead K.K.</p>
+            <p class="p--fontweight p--color p--fontweight--sm p--fontsize--sm">Veeva K.K. /
+            <span class="hide--sm"></br></span>Zink Ahead K.K.</p>
           </div>
           <div class="col-sm-8">
             <p class="p--fontweight p--color">Project Manager, Consultant and Configuration Specialist</p>
           </div>
         </div>
-        <div class="row row-width">
+        <div class="row row-width row-column">
           <div class="col-sm-4">
             <p class="p--sm p--color"> June 2015 - July 2017</p>
           </div>
           <div class="col-sm-8">
             <ul class="experience">
-              <li><span class="text--fontweight2">Marketing, product establishment sales and acquisition:</span>
+              <li class="hide--sm"><span class="text--fontweight2">Marketing, product establishment sales and acquisition:</span>
               </br>
-              <span class="p--sm">Customer aquisition and information events/exhibitions/presentations, product placing & pricing</span></li>
-              </br>
-              <li><span class="text--fontweight2">Project related work:</span>
+              <span class="p--sm">Customer aquisition and information events/exhibitions/presentations, product placing &#38; pricing</span></li>
+
+              <li class="hide--sm"></br><span class="text--fontweight2">Project related work:</span>
               </br>
               <span class="p--sm">SOW creation, consultancy, implementation and configuration of cloud applicaitons, UAT preparation and execution, training preparation and execution,
                 hypercare support, managed services (support), SPOC (Single Point of Contact) Communication in English, Japanese and German</span></li>
-                <li class="location"><i class="fas fa-map-marker"></i>Japan  <i class="fas fa-link"></i><a href="https://www.veeva.com/"> https://www.veeva.com/</a></li>
+                <li class="location"><i class="fas fa-map-marker"></i>Japan<span class="hide--sm__link"><i class="fas fa-link"></i><a href="https://www.veeva.com/"> https://www.veeva.com/</a></span></li>
             </ul>
           </div>
         </div>
@@ -174,35 +182,33 @@
 
         <!--werum section-->
 
-        <div class="row row-width row--margintop">
+        <div class="row row-width row--margintop row-column">
 
           <div class="col-sm-4">
-            <p class="p--fontweight p--color">Werum IT Solutions K.K.</p>
+            <p class="p--fontweight p--color p--fontweight--sm p--fontsize--sm">Werum IT Solutions K.K.</p>
           </div>
           <div class="col-sm-8">
             <p class="p--fontweight p--color"> Country Manager, Consultant and Configuration Specialist</p>
           </div>
         </div>
-        <div class="row row-width">
+        <div class="row row-width row-column">
           <div class="col-sm-4">
             <p class="p--sm p--color"> January 2011 - May 2015</p>
           </div>
           <div class="col-sm-8">
             <ul class="experience">
-              <li><span class="text--fontweight2">Setting up a subsidiary in Japan:</span>
+              <li class="hide--sm"><span class="text--fontweight2">Setting up a subsidiary in Japan:</span>
               </br>
               <span class="p--sm">German based IT company Werum IT Solutions</span></li>
-              </br>
-              <li><span class="text--fontweight2">Project related work:</span>
-              </br>
+              <li class="hide--sm"></br><span class="text--fontweight2">Project related work:</span>
               <span class="p--sm">Planning and excution of projects, schedule and budget management, installation and configuration
               , document creation (URS, UAT and training material), software testing and validation, UAT execution, training execution etc.</span></li>
-              <li class="location"><i class="fas fa-map-marker"></i>Japan and Germany<i class="fas fa-link"></i><a href="http://www.werum.com/en/home/"> http://www.werum.com</a></li>
+              <li class="location"><i class="fas fa-map-marker"></i>Japan &#38; Germany<span class="hide--sm__link"><i class="fas fa-link"></i><a href="http://www.werum.com/en/home/"> http://www.werum.com</a></span></li>
             </ul>
           </div>
         </div>
 
-      <!-- closing container & section -->
+      <!-- closing container &#38; section -->
       </div>
     </section>
 
@@ -223,73 +229,73 @@
 
         <!-- codecademy section -->
 
-        <div class="row row-width">
+        <div class="row row-width row-column">
 
           <div class="col-sm-4">
-            <p class="p--fontweight p--color">Codecademy</p>
+            <p class="p--fontweight p--color p--fontweight--sm p--fontsize--sm">Codecademy</p>
           </div>
           <div class="col-sm-8">
             <p class="p--fontweight p--color"> Web Developer</p>
           </div>
         </div>
-        <div class="row row-width">
+        <div class="row row-width row-column">
           <div class="col-sm-4">
             <p class="p--sm p--color"> January 2018 - April 2018</p>
           </div>
           <div class="col-sm-8">
             <ul class="experience">
-              <li><span class="text--fontweight2">Creating Front-End Solutions:</span></br>
+              <li class="hide--sm"><span class="text--fontweight2">Creating Front-End Solutions:</span></br>
               <span class="p--sm ">Web development with HTML, CSS, JavaScript, Jquery, github and bootstraps</span></li>
-              <li class="location"><i class="fas fa-map-marker"></i>Online<i class="fas fa-link"></i><a href="https://www.codecademy.com">https://www.codecademy.com</a></li>
+              <li class="location"><i class="fas fa-map-marker"></i>Online <span class="hide--sm__link"><i class="fas fa-link"></i><a href="https://www.codecademy.com">https://www.codecademy.com</a></span></li>
             </ul>
           </div>
         </div>
 
         <!-- SGD section -->
 
-        <div class="row row-width row--margintop">
+        <div class="row row-width row--margintop row-column">
 
           <div class="col-sm-4">
-            <p class="p--fontweight p--color">SGD Studiengemeinschaft Darmstadt</p>
+            <p class="p--fontweight p--color p--fontweight--sm p--fontsize--sm">SGD Studiengemeinschaft Darmstadt</p>
           </div>
           <div class="col-sm-8">
             <p class=" p--fontweight p--color">Web Content Manager:</p>
           </div>
         </div>
-        <div class="row row-width">
+        <div class="row row-width row-column">
           <div class="col-sm-4">
             <p class="p--sm p--color"> February 2009 - August 2010</p>
           </div>
           <div class="col-sm-8">
             <ul class="experience">
-              <li><span class="text--fontweight2">Web Development and Administration:</span></br>
+              <li class="hide--sm"><span class="text--fontweight2">Web Development and Administration:</span></br>
               <span class="p--sm">CMS installation and administration (wordpress etc.), web development (HTML, CSS, PHP and mySQL)</span></li>
-              <li class="location"><i class="fas fa-map-marker"></i>Online<i class="fas fa-link"></i><a href="https://www.sgd.de/">https://www.sgd.de/</a></li>
+              <li class="location"><i class="fas fa-map-marker"></i>Online<span class="hide--sm__link"><i class="fas fa-link"></i><a href="https://www.sgd.de/">https://www.sgd.de/</a></span></li>
             </ul>
           </div>
         </div>
 
         <!--university section  -->
 
-        <div class="row row-width row--margintop">
+        <div class="row row-width row--margintop row-column">
 
           <div class="col-sm-4">
-            <p class="p--fontweight p--color">University of Applied Sciences</p>
+            <p class="p--fontweight p--color p--fontweight--sm p--fontsize--sm">University of Applied Sciences</p>
           </div>
           <div class="col-sm-8">
             <p class="p--fontweight p--color"> Master Student</p>
           </div>
         </div>
-        <div class="row row-width">
+        <div class="row row-width row-column">
           <div class="col-sm-4">
             <p class="p--sm p--color"> September 1999 - July 2004</p>
           </div>
           <div class="col-sm-8">
             <ul class="experience">
-              <li><span class="text--fontweight2">Master of Business Administration:</span></br>
+              <li class="hide--sm"><span class="text--fontweight2">Master of Business Administration:</span></br>
               <span class="p--sm">Emphasis on marketing East Asia/Japan, Japanese law, economy, politics, international relations
                 and Japanese language studies</span></li>
-                <li class="location"><i class="fas fa-map-marker"></i>Ludwigshafen am Rhein<i class="fas fa-link"></i><a href="https://www.oai.de/de/">https://www.oai.de</a></li>
+                <li class="location"><i class="fas fa-map-marker"></i>Ludwigshafen <span class="hide--sm">am Rhein/Germany</span><span class="hide--sm__link"><i class="fas fa-link"></i><a href="https://www.oai.de/de/">https://www.oai.de</a></span></li>
             </ul>
           </div>
         </div>
@@ -306,7 +312,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="text-box text-box--margin">
-              <h2 class="text-box__text--color text-box__text--margin text-box__text--fontsize text-box__text--letterspacing">Skills, Languages & Tools</h2>
+              <h2 class="text-box__text--color text-box__text--margin text-box__text--fontsize text-box__text--letterspacing">Skills, Languages &#38; Tools</h2>
               <h3 class="text-box__text--small text-box__p-color">"It takes less time to do a thing right, than it does to explain why you did it wrong"</h3>
               <h4>- Henry Wadsworth Longfellow</h4>
             </div>
@@ -324,7 +330,7 @@
 
         </div>
 
-        <div class="row row-width">
+        <div class="row row-width row-column">
 
           <div class="col-sm-6">
             <ul class="skills">
@@ -422,7 +428,7 @@
           </div>
 
           <div class="col-sm-6">
-            <ul class="skills">
+            <ul class="skills skills--nopadding">
               <li class="skills--hover">
                 <span class="skills--fontweight skills--color">Typo &#38; Color Design</span>
                 <span class="skills--icons">
@@ -520,7 +526,7 @@
 
         <div class="row row-width">
 
-          <div class="col-sm-12">
+          <div class="col-sm-12 ">
             <hr class="hr--color">
           </div>
 
@@ -535,7 +541,7 @@
 
         </div>
 
-        <div class="row row-width">
+        <div class="row row-width row-column">
 
           <div class="col-sm-6">
             <ul class="skills">
@@ -562,7 +568,7 @@
             </ul>
           </div>
           <div class="col-sm-6">
-            <ul class="skills">
+            <ul class="skills skills--nopadding">
               <li class="skills--hover">
                 <span class="skills--fontweight skills--color">German (Fluent)</span>
                 <span class="skills--icons">
@@ -595,7 +601,7 @@
 
         </div>
 
-        <div class="row row-width">
+        <div class="row row-width row-column">
           <div class="col-sm-6">
             <ul class="skills">
               <li class="skills--hover">
@@ -692,7 +698,7 @@
           </div>
 
           <div class="col-sm-6">
-            <ul class="skills">
+            <ul class="skills skills--nopadding">
               <li class="skills--hover">
                 <span class="skills--fontweight skills--color">Adobe Fireworks</span>
                 <span class="skills--icons">
@@ -790,19 +796,18 @@
           <div class="col-sm-12">
             <div class="text-box text-box--margin">
               <h2 class="text-box__text--color text-box__text--margin text-box__text--fontsize text-box__text--letterspacing">Projects</h2>
-              <h3 class="text-box__text--small"> "The most popular question during a job interview"</br>
+              <h3 class="text-box__text--small"> "The most popular question during a job interview"
                 Why should we hire you? Because you are hiring!</h3>
             </div>
             <hr>
           </div>
         </div>
 
-        <div class="row row-width">
+        <div class="row row-width row-column">
 
-
-          <div class="col-sm-6 ">
+          <div class="col-sm-6 col-sm-6--marginbottom">
             <div class="project project-left">
-              <img src="./resources/images/landscape.jpg">
+                <img src="./resources/images/projects.jpg">
               <div class="project__link-box">
                 <i class="fas fa-external-link-alt"></i>
               </div>
@@ -825,58 +830,7 @@
 
           <div class="col-sm-6 ">
             <div class="project project-left">
-              <img src="./resources/images/landscape.jpg">
-              <div class="project__link-box">
-                <i class="fas fa-external-link-alt"></i>
-              </div>
-              <div class="project__header">
-                <!-- cannot place a link unless in overlay -->
-                <h3 class="project__header__text"> Project XYZ</h3>
-              </div>
-              <!-- link entire overlay area  -->
-              <a href="#">
-                <div class="project__overlay">
-                  <div class="project__description">
-                    <!-- only links in overlay work -->
-                    <p>Lorem ipsum dolor sit amet</br>
-                    Lorem ipsum dolor sit amet Test</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row row-width row--margintop2">
-
-
-          <div class="col-sm-6 ">
-            <div class="project project-left">
-              <img src="./resources/images/landscape.jpg">
-              <div class="project__link-box">
-                <i class="fas fa-external-link-alt"></i>
-              </div>
-              <div class="project__header">
-                <!-- cannot place a link unless in overlay -->
-                <h3 class="project__header__text"> Project XYZ</h3>
-              </div>
-              <!-- link entire overlay area  -->
-              <a href="#">
-                <div class="project__overlay">
-                  <div class="project__description">
-                    <!-- only links in overlay work -->
-                    <p>Lorem ipsum dolor sit amet</br>
-                    Lorem ipsum dolor sit amet Test</p>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-sm-6 ">
-            <div class="project project-left">
-              <img src="./resources/images/landscape.jpg">
+                <img src="./resources/images/projects.jpg">
               <div class="project__link-box">
                 <i class="fas fa-external-link-alt"></i>
               </div>
@@ -899,8 +853,57 @@
 
         </div>
 
+        <div class="row row-width row--margintop2 row-column">
 
+
+          <div class="col-sm-6 col-sm-6--marginbottom">
+            <div class="project project-left">
+                <img src="./resources/images/projects.jpg">
+              <div class="project__link-box">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+              <div class="project__header">
+                <!-- cannot place a link unless in overlay -->
+                <h3 class="project__header__text"> Project XYZ</h3>
+              </div>
+              <!-- link entire overlay area  -->
+              <a href="#">
+                <div class="project__overlay">
+                  <div class="project__description">
+                    <!-- only links in overlay work -->
+                    <p>Lorem ipsum dolor sit amet</br>
+                    Lorem ipsum dolor sit amet Test</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-sm-6 ">
+            <div class="project project-left">
+                <img src="./resources/images/projects.jpg">
+              <div class="project__link-box">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+              <div class="project__header">
+                <!-- cannot place a link unless in overlay -->
+                <h3 class="project__header__text"> Project XYZ</h3>
+              </div>
+              <!-- link entire overlay area  -->
+              <a href="#">
+                <div class="project__overlay">
+                  <div class="project__description">
+                    <!-- only links in overlay work -->
+                    <p>Lorem ipsum dolor sit amet</br>
+                    Lorem ipsum dolor sit amet Test</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+
     </section>
 
     <footer id="contact">
@@ -929,10 +932,6 @@
             </address>
           </div>
         </div>
-
-
-
-
 
       </div>
     </footer>

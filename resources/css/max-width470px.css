@@ -1,0 +1,43 @@
+/* Portrait phones max470 */
+
+@media all and (max-width: 470px) {
+
+  h1 {font-size: 2.75rem;}
+  h2 {font-size: 1.35rem;}
+  h3 {font-size: 1rem;}
+  h2.text-box__text--fontsize{font-size: 2rem;}
+  h3.text-box__text--small{font-size: 1rem;}
+
+/* navbar */
+  .navbar--desktop {display: none;}
+
+  /* main section  */
+  hr {margin: 2.5rem 0rem 1.5rem 0rem;}
+  .row {width: 100%;}
+  section {padding-bottom: 2rem;}
+  .row--margintop {margin-top: .5rem;}
+  .text--align {text-align: center;}
+  .p--fontweight--sm {font-weight: 300;}
+  .p--fontsize--sm{font-size: 1.125rem;}
+  .hr--color{color:blue;}
+  .row-column {
+    display: flex;
+    flex-flow: column;
+  }
+  .hide--sm, .hide--sm__link{display: none;}
+
+ .experience {
+    margin: 0;
+    padding: 0;
+  }
+
+ul.skills.skills--nopadding {padding-top: 0;}
+.col-sm-6--marginbottom {margin-bottom: 1rem;}
+.row--margintop2 {margin-top: 1rem;}
+footer {height: 18rem;}
+
+
+
+
+  /* project section */
+}

@@ -1,0 +1,8 @@
+/* Portrait phones min400 */
+
+@media all and (min-width: 400px) {
+
+.hide--sm__link {
+  display: block;
+}
+}
