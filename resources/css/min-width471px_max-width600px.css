@@ -1,8 +1,8 @@
-/* Portrait phones max470 */
+/* Portrait phalet and phones landscape max600 */
 
-@media all and (max-width: 470px) {
+@media all and (min-width: 470px) and (max-width: 600px) {
 
-  h1 {font-size: 2.75rem;}
+  h1 {font-size: 3rem;}
   h2 {font-size: 1.35rem;}
   h3 {font-size: 1rem;}
   h2.text-box__text--fontsize{font-size: 2rem;}
@@ -19,8 +19,8 @@
   .text--align {text-align: center;}
   .p--fontweight--sm {font-weight: 300;}
   .p--fontsize--sm{font-size: 1.125rem;}
+  .text--size {font-size: 1.5rem;}
   .text--padding {padding: 2rem 0rem 1rem 0rem}
-  .hr--color{color:blue;}
   .row-column {
     display: flex;
     flex-flow: column;
@@ -28,20 +28,28 @@
   .row-column--align {
     align-items: center;
   }
-  .hide--sm, .hide--sm__link, .hide--sm--me, .hide--sm__text{display: none;}
+  .row-column--align {
+    align-items: center;
+  }
 
+.hide--sm, .hide--sm__me {display: none;}
+.hide--sm__text{
+  display: block;}
+
+  p {
+    text-align: justify;
+  }
  .experience {
     margin: 0;
     padding: 0;
   }
 
-ul.skills.skills--nopadding {padding-top: 0;}
-.col-sm-6--marginbottom {margin-bottom: 1rem;}
-.row--margintop2 {margin-top: 1rem;}
-footer {height: 18rem;}
-
-
+  ul.skills.skills--nopadding {padding-top: 0;}
+  .col-sm-6--marginbottom {margin-bottom: 1rem;}
+  .row--margintop2 {margin-top: 1rem;}
+  footer {height: 18rem;}
 
 
   /* project section */
+
 }

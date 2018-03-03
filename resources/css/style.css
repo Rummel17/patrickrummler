@@ -52,7 +52,9 @@ h1 {
   border-bottom: rgba(158,158,158, 0.7) solid 1px;
   display: inline-block;
 }
-hr {margin: 2.5rem 0rem 2.5rem 0rem;}
+hr {
+  margin: 2.5rem 0rem 2.5rem 0rem;
+}
 .hr--color {border-color: rgba(6,40,61,0.1);}
 .hr--color2 {border-color: rgba(252,252,252, 0.3) }
 
@@ -353,8 +355,8 @@ position: relative;
 }
 
 div.project div.project__link-box {
-  height: 48px;
-  width: 48px;
+  height: 3rem;
+  width: 3rem;
   background-color: #6e1719;
   position: absolute;
   top: 0%;
