@@ -126,8 +126,7 @@ section {padding: 1rem 0rem 3rem 0rem;}
   background-attachment: fixed;
   height: 100vh;
 }
-/* media query for ipads
-banner will not be shown with code above */
+/* media query for ipads fix for background-attachment */
 @media only screen
 and (min-device-width : 768px)
 and (max-device-width : 1024px)
@@ -148,12 +147,12 @@ margin: 1rem 0rem 1rem 0rem;
 
 /* fonts and extra styles */
 .text--margin{margin: 0rem 0rem 2rem 0rem;}
-.text-paddingleft {padding-left: 0.25rem};
 .p--sm {font-size: 0.875rem;}
 .p--fontweight {font-weight:bold;}
 .text--fontweight2 {font-weight: normal;}
 .p--color{color: var(--sub-ft-color);}
 .text-box__text--margintop {margin-top: 1rem}
+.text--padding {padding: 1.5rem 0rem .5rem 0.25rem;}
 
 /* navigation bar with arrow*/
 
@@ -216,8 +215,6 @@ li.nav__animation {
 }
 /* arrow outside of navbar */
 .navbar ul.nav.nav-tabs li {background-color: #062C42;}
-
-
 
 /* the border-radius 4px turned out to be a pain in the ass because there are so
 many different states involeved all need to be adjusted */
@@ -351,23 +348,22 @@ position: relative;
 
 /*  transition effect directely on element */
 .project img {
-  max-width: calc(100% + 10px);
-  height: auto;
-  display: block;
+  max-width: calc(100% + 11px);/* the transform offset needs to be equalized*/
+  height: auto;               /*without this the picture will grow 10px on hover*/
+  display: block;             /* 11px is to fix a chrome bug where the pic grows an additional 1px on hover */
   opacity: 1;
   transform:translate3d(-10px, 0px, 0px);/* set it to the left on purpose*/
   transition: all 250ms linear 0ms;
-
+  overflow: hidden;
 }
 /* values on hover effect for better animation */
 .project:hover img{
-  opacity: 0.7;
   transform:translate3d(0px, 0px, 0px);/* sets it back to original position*/
 }
 
 div.project div.project__link-box {
-  height: 3rem;
-  width: 3rem;
+  height: 48px;
+  width: 48px;
   background-color: #6e1719;
   position: absolute;
   top: 0%;
@@ -378,7 +374,9 @@ div.project div.project__link-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
+
 div.project div.project__link-box i {
   color: #f9f9f9;
   font-size: 1.125rem;
@@ -387,7 +385,7 @@ div.project div.project__link-box i {
 
 /* overlay for faded red color
 over effect directly on project*/
-.project:hover .project__overlay {
+.project:hover .project__overlay{
   width: 100%;
   left:0;
 }
@@ -396,36 +394,41 @@ over effect directly on project*/
 .project__overlay {
    position: absolute;
    bottom: 0;
-   left: 100%;
+   left: 106%;/* to fix chromes additoinal 1px on hover */
    right: 0;
-   background-color: rgba(110,23,25, 0.1);/* set opacity to color, so font is not effected */
+   background-color: rgba(110,23,25, .45);/* set opacity to color, so font is not effected */
    overflow: hidden;
    width: 0;
    height: 100%;
    transition: .5s ease;
    opacity: 1;
+   z-index: 0;
+   backface-visibility: hidden;
+   transform: translateZ(0) scale(1.0, 1.0);
 }
 
 div.project div.project__overlay div.project__description p {
   position: absolute;
   top: 30%;
   left: 10%;
-  color: var(--sub-ft-color);
+  color: #dfdfdf;
   white-space: nowrap;
   font-size: 1.125rem;
 }
 
 /* only when I hover on project, will the description become
 opacity 1, otherwise it is 0*/
-div.project:hover div.project__header {opacity: 1;}
+div.project:hover div.project__header {
+  opacity: 1;
+}
 div.project div.project__header{
     transition: all 250ms linear 0ms;
     opacity: 0;
 }
 
-div.project .project__header__text {
+div.project h3.project__header__text {
   font-size:1.5rem;
-  color: var(--sub-ft-color);
+  color: #dfdfdf;
   font-weight: normal;
   padding-bottom: 0.35rem;
   position: absolute;
@@ -434,16 +437,18 @@ div.project .project__header__text {
   border-bottom: 2px solid transparent;
   width: 0%;
   white-space: nowrap;
+  transition: all 550ms linear 0ms;
 }
 
 /* again, in order to hover the border with the rest of the description__text
 hover needs to be placed on top level which is project */
 div.project:hover .project__header__text {
-  border-bottom: 2px solid var(--sub-ft-color);
+  border-bottom: 2px solid #dfdfdf;
   width: 77%;
+  z-index: 1;
 }
 div.project div.project__header h3 {
-  transition: all 250ms linear 0ms;
+  transition: all 450ms linear 0ms;
 }
 /* footer */
 footer {
