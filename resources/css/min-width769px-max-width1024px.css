@@ -4,7 +4,7 @@
 
 
   /* navbar */
-.navbar {left: 86%;}
+.navbar {top: 25%; left: 86%;}
 
 .navbar ul.nav.nav-tabs li {width: 6rem;}
 .navbar ul.nav.nav-tabs li a, .navbar ul.nav.nav-tabs li a:hover {
@@ -20,6 +20,7 @@
   .container-fluid__banner {
     background-attachment: local;
   }
+
   hr {margin: 2.5rem 0rem 1.5rem 0rem;}
   .row {width: 68%;}
   section {padding-bottom: 2rem;}
