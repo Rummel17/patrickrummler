@@ -41,6 +41,9 @@
     background-position: center;
     background-attachment: local;
   }
+  ul.nav li a:hover {
+      background-color: #062C42;
+  }
 
   ul.skills.skills--nopadding {padding-top: 1rem;}
   .col-sm-6--marginbottom {margin-bottom: 1rem;}
