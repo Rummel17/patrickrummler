@@ -7,4 +7,10 @@ h1 {font-size: 2.5rem}
 .hide--sm__link {
   display: block;
 }
+
+/* apple background fix */
+.container-fluid__banner {
+  background-position: center;
+  background-attachment: local;
+}
 }

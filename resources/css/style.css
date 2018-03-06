@@ -35,14 +35,13 @@ body {
 }
 
 :root {
-  --main-bg-color:#f0f0f0;/*f0f0f0 passt auch*/
+  --main-bg-color-white:#f0f0f0;/*f0f0f0 passt auch*/
   --main-ft-color-red: rgba(110,23,25, 1);/*das rot */
-  --sub-ft-color: rgba(6,39,59,1);
-  --sub2-ft-color: #777;
-  --sub3-ft-color: #888;
-  --sub4-ft-color: rgba(6,40,61,1);
-  --sub4-ft-colorfaded: rgba(6,40,61,0.7);
-  --quote-color: #444;
+  --sub-ft-color-blue: rgba(6,39,59,1);/*footer etc.*/
+  --sub2-ft-color-777: #777;
+  --sub3-ft-color-888: #888;
+  --sub4-ft-colorfaded-blue: rgba(6,40,61,0.7);/* blue faded */
+  --quote-color-444: #444;
 }
 
 h1 {
@@ -60,7 +59,7 @@ hr {
 
 
 h2 {
-  color: var(--sub-ft-color);
+  color: var(--sub-ft-color-blue);
   font-weight: 400;
   font-size: 1.5rem;
   margin: 0rem 0rem 0rem 0rem;
@@ -74,7 +73,7 @@ h2 {
 .text--color{color: var(--main-ft-color-red);}
 
 h3 {
-  color: var(--sub2-ft-color);
+  color: var(--sub2-ft-color-777);
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.5;
@@ -84,13 +83,13 @@ h3 {
 .text-box__text--small{font-size: 1.125rem;}
 
 h4 {
-  color: var(--quote-color);
+  color: var(--quote-color-444);
   font-size: 0.75rem;
   font-weight: 300;
 }
 
 p {
-  color: var(--sub3-ft-color);
+  color: var(--sub3-ft-color-888);
   font-size: 0.935rem;
   font-weight: 300;
   line-height: 1.7;
@@ -100,7 +99,7 @@ ul {
   padding: 1rem 0rem 0rem 0rem;;
   margin: 0;
   font-size: 1rem;
-  color: var(--sub4-ft-color);
+  color: var(--sub-ft-color-blue);
   font-weight: 300;
   line-height: 1.5;
   list-style: none;
@@ -114,7 +113,7 @@ ul {
 section {padding: 1rem 0rem 3rem 0rem;}
 
 .container-fluid {padding: 0;}
-.section--color {background-color: var(--main-bg-color);}
+.section--color {background-color: var(--main-bg-color-white);}
 .section--white {background-color: white;}
 
 /* Banner & Header Section*/
@@ -150,7 +149,7 @@ margin: 1rem 0rem 1rem 0rem;
 .p--sm {font-size: 0.875rem;}
 .p--fontweight {font-weight:bold;}
 .text--fontweight2 {font-weight: normal;}
-.p--color{color: var(--sub-ft-color);}
+.p--color{color: var(--sub-ft-color-blue);}
 .text-box__text--margintop {margin-top: 1rem}
 .text--padding {padding: 1.5rem 0rem .5rem 0.25rem;}
 
@@ -181,12 +180,12 @@ but not on this page */
   padding: 0;
 }
 
-.navbar ul.nav.nav-tabs li {
+.navbar ul.nav li {
   width: 7.5rem;
   padding: 0rem 0rem;
 }
 
-.navbar ul.nav.nav-tabs li a, .navbar ul.nav.nav-tabs li a:hover {
+.navbar ul.nav li a, .navbar ul.nav li a:hover {
   text-decoration: none;
   color: white;
   font-weight: normal;
@@ -213,25 +212,21 @@ li.nav__animation {
    50% {top: 10px;}
    100% {top: 0px;}
 }
-/* arrow outside of navbar */
-.navbar ul.nav.nav-tabs li {background-color: #062C42;}
+
+.navbar ul.nav li {background-color: #062C42;}/*different from rest because of contrast to footer when scrolling down*/
 
 /* the border-radius 4px turned out to be a pain in the ass because there are so
 many different states involeved all need to be adjusted */
-.navbar ul.nav.nav-tabs li.active a:hover, .navbar ul.nav.nav-tabs li.active {
-  text-decoration: none;
-  background-color: var(--main-ft-color-red);
-  border: none;
-  border-radius:0;
-  margin: 0;
-}
 
-.navbar ul.nav.nav-tabs li.active a {
+/* again there seems to be a white background color comming from the bootstrap css
+this is to fix this */
+.navbar ul.nav li.active a {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-ft-color-red);
 }
 
-ul.nav.nav-tabs, ul.nav.nav-tabs a {
+/* active a:hover is in there because of a border that comes from the bootstrap css */
+ul.nav.nav-tabs, ul.nav.nav-tabs a, .navbar ul.nav li.active a:hover {
   color: white;
   border: none;
   border-radius: 0px;
@@ -242,7 +237,7 @@ ul.nav.nav-tabs, ul.nav.nav-tabs a {
 adjusted for the round corners. Eventually, I found it with dev Tools
 and all I needed to do was write the path down*/
 ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.nav--borderbottom.active {
-  background-color: var(--main-ft-color-red);
+    background-color: var(--main-ft-color-red);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -315,7 +310,7 @@ height: auto;
 .skills{
   font-size: 0.935rem;
   font-weight: 400;
-  color: var(--sub4-ft-colorfaded);
+  color: var(--sub4-ft-colorfaded-blue);
 }
 
 .fa--color {color: rgba(6,39,59,0.9);}
@@ -452,13 +447,15 @@ div.project div.project__header h3 {
 }
 /* footer */
 footer {
-  background-color: var(--sub-ft-color);
+  background-color: var(--sub-ft-color-blue);
   height: 23rem;
   padding: 1rem 0rem;
 }
+
+
 /*footer font for contrast */
 .text-box__text--color2 {color: white;}
-.text-box__text--color3 {color: #f9f9f9;}
+.text-box__text--color3, footer h4 {color: #f9f9f9;}
 
 .contact {
   display: flex;
@@ -475,5 +472,5 @@ footer {
 }
 .contact__icon {transition: background-color 250ms linear 0ms;}
 .contact__icon:hover{background-color:#d9d9d9;}
-.contact__mail, .contact__facebook {color: var(--sub4-ft-color);}
+.contact__mail, .contact__facebook {color: var(--sub-ft-color-blue);}
 .contact__mail {font-size: 1.125rem;}

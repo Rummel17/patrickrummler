@@ -32,9 +32,8 @@
   .row--row{flex-flow: row;}
   .col-sm-6 {width: 100%;}
 
-  .hide--sm, .hide--sm__me {display: none;}
-  .hide--sm__text{
-  display: block;}
+  .hide--sm470-767 {display: none;}
+
 
   p {
     text-align: justify;
@@ -42,6 +41,12 @@
  .experience {
     margin: 0;
     padding: 0;
+  }
+
+  /* apple background fix */
+  .container-fluid__banner {
+    background-position: center;
+    background-attachment: local;
   }
 
   ul.skills.skills--nopadding {padding-top: 1rem;}
