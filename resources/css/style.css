@@ -220,6 +220,7 @@ many different states involeved all need to be adjusted */
 
 /* again there seems to be a white background color comming from the bootstrap css
 this is to fix this */
+/* THIS IS WHERTE THE SPY IS TAKING EFFECT*/
 .navbar ul.nav li.active a {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-ft-color-red);
@@ -236,7 +237,7 @@ ul.nav.nav-tabs, ul.nav.nav-tabs a, .navbar ul.nav li.active a:hover {
 /*this one drove me crazy, I could not find the state that needed to be
 adjusted for the round corners. Eventually, I found it with dev Tools
 and all I needed to do was write the path down*/
-ul.nav.nav-tabs li a:hover, ul.nav.nav-tabs li.nav--borderbottom.active {
+ul.nav li a:hover {
     background-color: var(--main-ft-color-red);
     border-radius: 0px 0px 4px 4px;
 }
