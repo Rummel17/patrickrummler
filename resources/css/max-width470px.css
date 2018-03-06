@@ -41,6 +41,9 @@
     background-attachment: local;
   }
 
+  ul.nav li a:active {background-color: #062C42;} /* fixed ipad/apple hover/active bug by
+  making active state dissapear by setting the same background color as on nav */
+
   ul.skills.skills--nopadding {padding-top: 0;}
   .col-sm-6--marginbottom {margin-bottom: 1rem;}
   .row--margintop2 {margin-top: 1rem;}

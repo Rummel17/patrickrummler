@@ -71,6 +71,7 @@ h2 {
 /*red headings */
 .text-box__text--color,
 .text--color{color: var(--main-ft-color-red);}
+.text--size{font-size: 1.75rem;}
 
 h3 {
   color: var(--sub2-ft-color-777);
@@ -152,6 +153,8 @@ margin: 1rem 0rem 1rem 0rem;
 .p--color{color: var(--sub-ft-color-blue);}
 .text-box__text--margintop {margin-top: 1rem}
 .text--padding {padding: 1.5rem 0rem .5rem 0.25rem;}
+.text--paddingbottom {padding-bottom: 2rem;}
+.text--paddingtop{padding-top: 0rem}
 
 /* navigation bar with arrow*/
 
@@ -386,13 +389,18 @@ over effect directly on project*/
   left:0;
 }
 
+.project--border {
+  border: #f0f0f0 solid 1px;
+  box-shadow: 0px 3px 10px #d1d1d1;
+}
+
 /* transition on element directly */
 .project__overlay {
    position: absolute;
    bottom: 0;
    left: 106%;/* to fix chromes additoinal 1px on hover */
    right: 0;
-   background-color: rgba(110,23,25, .45);/* set opacity to color, so font is not effected */
+   background-color: rgba(110,23,25, .65);/* set opacity to color, so font is not effected */
    overflow: hidden;
    width: 0;
    height: 100%;
