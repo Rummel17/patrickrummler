@@ -3,12 +3,14 @@ window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
     "popup": {
-      "background": "#252e39"
+      "background": "rgba(6,39,59,1)"
     },
     "button": {
-      "background": "#14a7d0"
+      "background": "transparent",
+      "text": "#14a7d0",
+      "border": "#14a7d0"
     }
   },
-  "theme": "classic"
+  "type": "opt-out"
 })});
 </script>
