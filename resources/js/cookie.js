@@ -1,4 +1,3 @@
-<script>
 window.addEventListener("load", function(){
 window.cookieconsent.initialise({
   "palette": {
@@ -13,4 +12,3 @@ window.cookieconsent.initialise({
   },
   "type": "opt-out"
 })});
-</script>
