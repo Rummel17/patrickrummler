@@ -19,8 +19,9 @@
   .text--align {text-align: center;}
   .p--fontweight--sm {font-weight: 300;}
   .p--fontsize--sm{font-size: 1.125rem;}
-  .text--size {font-size: 1.5rem;}
+  .text--size {font-size: 1.75rem;}
   .text--padding {padding: 2rem 0rem 1rem 0rem}
+  .text--marginbottom {margin-bottom: 1rem;}
   .row-column {
     display: flex;
     flex-flow: column;
@@ -32,7 +33,7 @@
     align-items: center;
   }
 
-.hide--sm470-767 {display: none;}
+  .hide--sm470-767, .hide--Rhein {display: none;}
 
 
   p {
@@ -49,13 +50,27 @@
     background-attachment: local;
   }
 
+  .arrow {
+    left: 0;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #062C42;
+    transition: background-color 250ms ease-in-out;
+  }
+  .arrow:hover {
+    background-color: var(--main-ft-color-red);
+  }
+  .arrow i {
+    font-size: 1.5rem;
+  }
+
   ul.nav li a:active {background-color: #062C42;} /* fixed ipad/apple hover/active bug by
   making active state dissapear by setting the same background color as on nav */
 
   ul.skills.skills--nopadding {padding-top: 0;}
-  .col-sm-6--marginbottom {margin-bottom: 1rem;}
+  .col-sm-6--marginbottom {margin-bottom: 2rem;}
   .row--margintop2 {margin-top: 1rem;}
-  footer {height: 18rem;}
+  footer {height: 20rem;}
 
 
   /* project section */

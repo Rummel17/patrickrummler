@@ -9,6 +9,9 @@ body {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+.max--width{
+  max-width: 1980px;
+}
 /* fonts/ main colors & main styles */
 @font-face {
   font-family: 'Open Sans', sans-serif;
@@ -153,8 +156,9 @@ margin: 1rem 0rem 1rem 0rem;
 .p--color{color: var(--sub-ft-color-blue);}
 .text-box__text--margintop {margin-top: 1rem}
 .text--padding {padding: 1.5rem 0rem .5rem 0.25rem;}
+.text--paddingleft {padding-left: .25rem;}
 .text--paddingbottom {padding-bottom: 2rem;}
-.text--paddingtop{padding-top: 0rem}
+.text--paddingtop{padding-top: 2rem}
 
 /* navigation bar with arrow*/
 
@@ -170,11 +174,18 @@ but not on this page */
 
 .navbar {
   position: fixed;
-  top: 12%;
+  top: 11%;
   left: 86%;
   display: flex;
   flex-flow: column;
   text-align: center;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 0%;
+  left: 86%;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -183,8 +194,8 @@ but not on this page */
   padding: 0;
 }
 
-.navbar ul.nav li {
-  width: 7.5rem;
+.navbar ul.nav li, .arrow {
+  width: 7rem;
   padding: 0rem 0rem;
 }
 
@@ -192,16 +203,16 @@ but not on this page */
   text-decoration: none;
   color: white;
   font-weight: normal;
-  padding: 2.25rem 0rem;/* height of the nav */
+  padding: 2rem 0rem;/* height of the nav */
 }
 
-li.nav__animation {
+li.nav__animation, .arrow {
  display: flex;
  justify-content: center;
  align-items: center;
 }
 .nav__animation i{
- font-size: 2.5rem;
+ font-size: 2rem;
  padding: 1.5rem 0rem;
  color: white;
  position: relative;
@@ -210,6 +221,13 @@ li.nav__animation {
  animation-iteration-count: infinite;
  animation-timing-function: linear;
 }
+
+.arrow i{
+  padding: 0.5rem 0rem;
+  font-size: 2rem;
+  color:white;
+}
+
 @keyframes mymove {
    0% {top: 0px;}
    50% {top: 10px;}
@@ -224,9 +242,12 @@ many different states involeved all need to be adjusted */
 /* again there seems to be a white background color comming from the bootstrap css
 this is to fix this */
 /* THIS IS WHERTE THE SPY IS TAKING EFFECT*/
-.navbar ul.nav li.active a {
+.navbar ul.nav li.active a, .arrow {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--main-ft-color-red);
+}
+.arrow {
+  border-radius: 4px 4px 0px 0px;
 }
 
 /* active a:hover is in there because of a border that comes from the bootstrap css */
@@ -349,7 +370,7 @@ position: relative;
 .project img {
   max-width: calc(100% + 11px);/* the transform offset needs to be equalized*/
   height: auto;               /*without this the picture will grow 10px on hover*/
-  display: block;             /* 11px is to fix a chrome bug where the pic grows an additional 1px on hover */
+  display: block;             /* 11px is to fix a 1px bug where the pic needs addition 1px */
   opacity: 1;
   transform:translate3d(-10px, 0px, 0px);/* set it to the left on purpose*/
   transition: all 250ms linear 0ms;
@@ -368,7 +389,7 @@ div.project div.project__link-box {
   top: 0%;
   right:0%;
   border-radius: 0px 0px 0px 4px;
-  opacity: 0.9;
+  opacity: 1;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -378,15 +399,8 @@ div.project div.project__link-box {
 
 div.project div.project__link-box i {
   color: #f9f9f9;
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding:0rem 0rem 0.1rem 0.3rem;
-}
-
-/* overlay for faded red color
-over effect directly on project*/
-.project:hover .project__overlay{
-  width: 100%;
-  left:0;
 }
 
 .project--border {
@@ -398,7 +412,7 @@ over effect directly on project*/
 .project__overlay {
    position: absolute;
    bottom: 0;
-   left: 106%;/* to fix chromes additoinal 1px on hover */
+   left: 100%;
    right: 0;
    background-color: rgba(110,23,25, .65);/* set opacity to color, so font is not effected */
    overflow: hidden;
@@ -409,6 +423,13 @@ over effect directly on project*/
    z-index: 0;
    backface-visibility: hidden;
    transform: translateZ(0) scale(1.0, 1.0);
+}
+
+/* overlay for faded red color
+over effect directly on project*/
+.project:hover .project__overlay{
+  width: calc(100% + 1px);/* to fix additoinal 1px on hover */
+  left:0;
 }
 
 div.project div.project__overlay div.project__description p {

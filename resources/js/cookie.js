@@ -9,6 +9,5 @@ window.cookieconsent.initialise({
       "text": "#14a7d0",
       "border": "#14a7d0"
     }
-  },
-  "type": "opt-out"
+  }
 })});

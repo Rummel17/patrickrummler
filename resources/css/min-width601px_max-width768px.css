@@ -7,6 +7,8 @@
   h3 {font-size: 1rem;}
   h2.text-box__text--fontsize{font-size: 2rem;}
   h3.text-box__text--small{font-size: 1rem;}
+  div.project h3.project__header__text{font-size: 1.25rem;}
+  div.project div.project__overlay div.project__description p {font-size: 1rem;}
 
 /* navbar */
   .navbar--desktop {display: none;}
@@ -20,8 +22,10 @@
   .text--align {text-align: center;}
   .p--fontweight--sm {font-weight: 300;}
   .p--fontsize--sm{font-size: 1.25rem;}
-  .text--size {font-size: 1.5rem;}
+  .text--size {font-size: 1.75rem;}
   .text--padding {padding: 2rem 0rem 1rem 0rem}
+  .text--paddingtop{padding-top: 1.5rem;}
+  .text--marginbottom {margin-bottom: 1rem;}
   .row-column {
     display: flex;
     flex-flow: column;
@@ -48,14 +52,26 @@
     background-position: center;
     background-attachment: local;
   }
-
+  .arrow {
+    left: 0;
+    width: 100%;
+    border-radius: 0px;
+    background-color: #062C42;
+    transition: background-color 250ms ease-in-out;
+  }
+  .arrow:hover {
+    background-color: var(--main-ft-color-red);
+  }
+  .arrow i {
+    font-size: 1.5rem;
+  }
   ul.nav li a:active {background-color: #062C42;} /* fixed ipad/apple hover/active bug by
   making active state dissapear by setting the same background color as on nav */
-  
+
   ul.skills.skills--nopadding {padding-top: 1rem;}
-  .col-sm-6--marginbottom {margin-bottom: 1rem;}
+  .col-sm-6--marginbottom {margin-bottom: 0rem;}
   .row--margintop2 {margin-top: 1rem;}
-  footer {height: 18rem;}
+  footer {height: 20rem;}
 
 
   /* project section */

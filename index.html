@@ -37,11 +37,12 @@
       <!-- cookie consent -->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <!-- dont use the script tag in the js file. It will not work -->
     <script src="resources/js/cookie.js"></script>
   </head>
-  <body data-spy="scroll" data-target="#myScrollspy" data-offset="700">
+  <body class="" data-spy="scroll" data-target="#myScrollspy" data-offset="700">
 
-    <header>
+    <header id="top">
       <div class="container-fluid container-fluid__banner container-fluid--align">
 
         <div class="row">
@@ -60,7 +61,7 @@
       </div>
 
       <!--navbar-->
-      <nav id="myScrollspy" class="navbar navbar--desktop">
+      <nav id="myScrollspy" class="navbar navbar--desktop" role="navigation">
         <ul class="nav nav-tabs" >
           <li class="nav__animation nav--bordertop sticky"><i class="fas fa-angle-down"></i></li>
           <li><a href="#work">Work</a></li>
@@ -70,13 +71,17 @@
           <li class="nav--borderbottom"><a href="#contact" class="nav--borderbottom">Contact</a></li>
         </ul>
       </nav>
-
+      <a href="#top">
+        <div class="arrow">
+          <i class="fas fa-angle-up"></i>
+        </div>
+      </a>
 
     </header>
 
     <section class="section--white">
 
-      <div class="container-fluid container-fluid--align">
+      <div class="container-fluid container-fluid--align max--width">
 
         <div class="row">
           <div class="col-sm-12">
@@ -90,7 +95,7 @@
 
         <div class="row row-width-30 row-width-65">
           <div class="col-sm-2 col--margin col--picture hide--sm470-767 hide--pic">
-            <img src="./resources/images/auge2.png">
+            <img src="./resources/images/auge2.png" alt="a pictue of the right eye of Patrick Rummler">
           </div>
           <div class="col-sm-6 col--margin">
             <h2 class="text--color text--margin text--align text--size">Take a Closer Look</h2>
@@ -114,7 +119,7 @@
 
     <!-- work experience -->
     <section id="work" class="section--color">
-      <div class="container-fluid container-fluid--align">
+      <div class="container-fluid container-fluid--align max--width">
 
         <div class="row">
           <div class="col-sm-12">
@@ -222,7 +227,7 @@
 
     <!-- education  -->
     <section id="education" class="section--white">
-      <div class="container-fluid container-fluid--align">
+      <div class="container-fluid container-fluid--align max--width">
 
         <div class="row">
           <div class="col-sm-12">
@@ -315,7 +320,7 @@
     <!-- skills section -->
 
     <section id="skills" class="section--color">
-      <div class="container-fluid container-fluid--align">
+      <div class="container-fluid container-fluid--align max--width">
 
         <div class="row">
           <div class="col-sm-12">
@@ -332,7 +337,7 @@
         <div class="row row-width">
 
           <div class="col-sm-12">
-            <h2 class="text--color text--size">Skills</h2>
+            <h2 class="text--color text--size text--paddingleft">Skills</h2>
           </div>
 
         </div>
@@ -797,7 +802,7 @@
 
     <!-- projects section  -->
     <section id="projects" class="section--white">
-      <div class="container-fluid container-fluid--align">
+      <div class="container-fluid container-fluid--align max--width">
 
         <div class="row">
           <div class="col-sm-12">
@@ -813,7 +818,7 @@
         <div class="row row-width">
 
           <div class="col-sm-12">
-            <h2 class="text--color text--size text--padding text--paddingbottom text--paddingtop">Design: Business Cards</h2>
+            <h2 class="text--color text--size text--paddingbottom">Design: Business Cards</h2>
           </div>
 
         </div>
@@ -821,9 +826,9 @@
 
           <div class="col-sm-6 col-sm-6--marginbottom">
             <!-- link entire div area  -->
-            <a href="#">
+            <!-- <a href="#"> -->
               <div class="project project--border">
-                <img src="./resources/images/example1.0.jpg">
+                <img src="./resources/images/example1.0.jpg" alt="business card in blue, gray and yellow for the VGO/Germany">
                 <div class="project__link-box">
                   <i class="fas fa-external-link-alt"></i>
                 </div>
@@ -834,22 +839,22 @@
                 <div class="project__overlay">
                   <div class="project__description">
                     <!-- only links in overlay work -->
-                    <p><span class="text--fontweight">Description</span> </br>
-                      Corporate design based custom
-                      </br> made color scheme</p>
+                    <p><span class="text--fontweight">Description</span></br>
+                      Corporate design based
+                      </br>color scheme</p>
 
                   </div>
                 </div>
 
               </div>
-            </a>
+            <!-- </a> -->
           </div>
 
           <div class="col-sm-6 ">
             <!-- link entire div area  -->
-            <a href="#">
+            <!-- <a href="#"> -->
               <div class="project project--border">
-                <img src="./resources/images/final_back1.0.jpg">
+                <img src="./resources/images/final_back1.0.jpg" alt="business card of Patrick Rummler in black and red, passionate and sophisticated">
                 <div class="project__link-box">
                   <i class="fas fa-external-link-alt"></i>
                 </div>
@@ -859,22 +864,24 @@
                 </div>
                 <div class="project__overlay">
                   <div class="project__description">
+                    <p><span class="text--fontweight">Description</span></br>
                     <!-- only links in overlay work -->
-                    <p></br>
+                    Visual identity with assionate</br> and sophisticated colors
                     </p>
                   </div>
                 </div>
 
               </div>
-            </a>
+            <!-- </a> -->
           </div>
 
         </div>
 
+        <!-- User Interface Design  -->
         <div class="row row-width">
 
           <div class="col-sm-12">
-            <h2 class="text--color text--size text--padding">Projects</h2>
+            <h2 class="text--color text--size text--paddingtop text--marginbottom">Web-Design: User Interface for a Fanpage</h2>
           </div>
 
         </div>
@@ -883,24 +890,90 @@
 
           <div class="col-sm-6 col-sm-6--marginbottom">
             <!-- link entire div area  -->
-            <a href="#">
-              <div class="project ">
+            <!-- <a href="#"> -->
+              <div class="project project--border ">
                 <!-- landscape-2 is 1600x 1200 which is not necessary but serves
                 well, because it will never be too small for the size of of the project div
                 and therefore will never not fill its container -->
-                <img src="./resources/images/landscape-2.jpg">
+                <img src="./resources/images/ui1.jpg" alt="User interface picture showing a form to insert data">
                 <div class="project__link-box">
                   <i class="fas fa-external-link-alt"></i>
                 </div>
                 <div class="project__header">
                   <!-- cannot place a link unless in overlay -->
-                  <h3 class="project__header__text">Coming Soon</h3>
+                  <h3 class="project__header__text">User Interface Fanpage</h3>
                 </div>
                 <div class="project__overlay">
                   <div class="project__description">
                     <!-- only links in overlay work -->
-                    <p>Lorem ipsum dolor sit amet</br>
-                    Lorem ipsum dolor sit amet Test</p>
+                    <p><span class="text--fontweight">Description</span></br>
+                    Corporate identity color scheme</br>
+                    Focus: Usebility and typography</p>
+                  </div>
+                </div>
+
+              </div>
+            <!-- </a> -->
+          </div>
+
+
+          <div class="col-sm-6 ">
+            <!-- link entire div area  -->
+            <!-- <a href="#"> -->
+              <div class="project project--border">
+                <img src="./resources/images/ui2.jpg" alt="User interface showing a menu and a contact pop up to chat with users">
+                <div class="project__link-box">
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+                <div class="project__header">
+                  <!-- cannot place a link unless in overlay -->
+                  <h3 class="project__header__text">User Interface Fanpage</h3>
+                </div>
+                <div class="project__overlay">
+                  <div class="project__description">
+                    <!-- only links in overlay work -->
+                    <p><span class="text--fontweight">Description</span></br>
+                    Corporate identity color scheme</br>
+                    Focus: usebility and typography</p>
+                  </div>
+                </div>
+
+              </div>
+            <!-- </a> -->
+          </div>
+        </div>
+
+        <div class="row row-width">
+
+          <div class="col-sm-12">
+            <h2 class="text--color text--size text--paddingtop text--marginbottom">Web Design: Homepages</h2>
+          </div>
+
+        </div>
+
+        <div class="row row-width row--margintop2 row-column row--row">
+
+          <div class="col-sm-6 col-sm-6--marginbottom">
+            <!-- link entire div area  -->
+            <a href="https://rummel17.github.io/colmaracademy/">
+              <div class="project project--border">
+                <!-- landscape-2 is 1600x 1200 which is not necessary but serves
+                well, because it will never be too small for the size of of the project div
+                and therefore will never not fill its container -->
+                <img src="./resources/images/colmar01.jpg" alt="preview of colmar academy's homepage">
+                <div class="project__link-box">
+                  <i class="fas fa-external-link-alt"></i>
+                </div>
+                <div class="project__header">
+                  <!-- cannot place a link unless in overlay -->
+                  <h3 class="project__header__text">Landing Page</h3>
+                </div>
+                <div class="project__overlay">
+                  <div class="project__description">
+                    <!-- only links in overlay work -->
+                    <p><span class="text--fontweight">Description</span></br>
+                    Corporate design</br>
+                    customized typography/color scheme</p>
                   </div>
                 </div>
 
@@ -911,21 +984,22 @@
 
           <div class="col-sm-6 ">
             <!-- link entire div area  -->
-            <a href="#">
-              <div class="project">
-                <img src="./resources/images/landscape-2.jpg">
+            <a href="https://rummel17.github.io/fotomatic/">
+              <div class="project project--border">
+                <img src="./resources/images/fotomatic01.jpg" alt="preview of fotomatic's hompeage">
                 <div class="project__link-box">
                   <i class="fas fa-external-link-alt"></i>
                 </div>
                 <div class="project__header">
                   <!-- cannot place a link unless in overlay -->
-                  <h3 class="project__header__text">Coming Soon</h3>
+                  <h3 class="project__header__text">Landing Page</h3>
                 </div>
                 <div class="project__overlay">
                   <div class="project__description">
                     <!-- only links in overlay work -->
-                    <p>Lorem ipsum dolor sit amet</br>
-                    Lorem ipsum dolor sit amet Test</p>
+                    <p><span class="text--fontweight">Description</span></br>
+                    Focus: Pictures and Presentation</br>
+                    </p>
                   </div>
                 </div>
 
@@ -940,13 +1014,16 @@
       <div class="container-fluid container-fluid--align">
 
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 max--width">
             <div class="text-box text-box--margin">
               <h2 class="text-box__text--color2 text-box__text--margin text-box__text--fontsize text-box__text--letterspacing">Contact</h2>
               <h3 class="text-box__text--small text-box__text--color3">"You can judge your age by the amount of pain you feel when you come in contact with a new idea"</h3>
               <h4>-Pearl S. Buck</h4>
+              <hr class="hr--color2">
             </div>
-            <hr class="hr--color2">
+
+
+
           </div>
         </div>
         <div class="row">
