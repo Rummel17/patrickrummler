@@ -159,6 +159,8 @@ margin: 1rem 0rem 1rem 0rem;
 .text--paddingleft {padding-left: .25rem;}
 .text--paddingbottom {padding-bottom: 2rem;}
 .text--paddingtop{padding-top: 2rem}
+.text--align{text-align: center}
+
 
 /* navigation bar with arrow*/
 
@@ -359,8 +361,13 @@ but not on li*/
 }
 
 /*project section */
+.col-sm-6--position{
+  display: flex;
+  justify-content: flex-end;
+}
 .project {
 width: 100%;
+max-width: 400px;
 height: auto;
 overflow: hidden;
 position: relative;

@@ -22,11 +22,11 @@
   .text--size {font-size: 1.75rem;}
   .text--padding {padding: 2rem 0rem 1rem 0rem}
   .text--marginbottom {margin-bottom: 1rem;}
-  .row-column {
+  .row-column, .col-sm-6--center {
     display: flex;
     flex-flow: column;
   }
-  .row-column--align {
+  .row-column--align, .col-sm-6--center {
     align-items: center;
   }
   .row-column--align {

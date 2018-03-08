@@ -34,7 +34,7 @@
   .col-sm-6 {width: 100%;}
   .hide--pic, .hide--Rhein {display: none;}
   div.project h3.project__header__text{font-size: 1.25rem;}
-  div.project div.project__overlay div.project__description p {font-size: 0.935rem;}
+  div.project div.project__overlay div.project__description p {font-size: 0.85rem;}
   .experience {
     margin: 0;
     padding: 0;
