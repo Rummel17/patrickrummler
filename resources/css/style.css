@@ -41,13 +41,13 @@ body {
   --main-bg-color-white:#f0f0f0;/*f0f0f0 passt auch*/
   --main-ft-color-red: rgba(110,23,25, 1);/*das rot */
   --sub-ft-color-blue: rgba(6,39,59,1);/*footer etc.*/
-  --sub2-ft-color-777: #777;
-  --sub3-ft-color-888: #888;
   --sub4-ft-colorfaded-blue: rgba(6,40,61,0.7);/* blue faded */
+  --sub5-ft-colorwhite: #fafafa;
   --quote-color-444: #444;
 }
 
 h1 {
+  font-size: 64px;
   font-size: 4rem;/* This is messing up the lowest width for smartphones*/
   font-weight: bold;
   color: var(--main-ft-color-red);
@@ -55,6 +55,7 @@ h1 {
   display: inline-block;
 }
 hr {
+  margin: 40px 0px 40px 0px;
   margin: 2.5rem 0rem 2.5rem 0rem;
 }
 .hr--color {border-color: rgba(6,40,61,0.1);}
@@ -64,61 +65,71 @@ hr {
 h2 {
   color: var(--sub-ft-color-blue);
   font-weight: 400;
+  font-size: 24px;
   font-size: 1.5rem;
+  margin: 0px 0px 0px 0px;
   margin: 0rem 0rem 0rem 0rem;
 }
 /* h2 font-size for headings Projects, Skils etc. */
-.text-box__text--fontsize {font-size:2.5rem;}
+.text-box__text--fontsize {font-size: 40px;font-size:2.5rem;}
 .text-box__text--letterspacing {letter-spacing: -1px;}
-.text-box__text--margin{margin: 0rem 0rem 1rem 0rem;}
+.text-box__text--margin{margin: 0px 0px 16px 0px;margin: 0rem 0rem 1rem 0rem;}
 /*red headings */
 .text-box__text--color,
 .text--color{color: var(--main-ft-color-red);}
-.text--size{font-size: 1.75rem;}
+.text--size{font-size: 28px;font-size: 1.75rem;}
 
 h3 {
-  color: var(--sub2-ft-color-777);
+  color:   var(--sub-ft-color-blue);
+  font-size: 20px;
   font-size: 1.25rem;
   font-weight: 300;
   line-height: 1.5;
+  margin: 0px 0px 8px 0px;
   margin: 0rem 0rem 0.5rem 0rem;
 }
 /*h3 smaller font */
-.text-box__text--small{font-size: 1.125rem;}
+.text-box__text--small{font-size: 18px;font-size: 1.125rem;}
 
 h4 {
-  color: var(--quote-color-444);
+  color: var(--sub4-ft-colorfaded-blue);
+  font-size: 12px;
   font-size: 0.75rem;
   font-weight: 300;
 }
 
 p {
-  color: var(--sub3-ft-color-888);
-  font-size: 0.935rem;
+  color: var(--sub-ft-color-blue);
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 1.6;
+  margin: 8px 0px 0px 0px;
   margin: 0.5rem 0rem 0rem 0rem;
 }
 ul {
+  padding: 16px 0px 0px 0px;
   padding: 1rem 0rem 0rem 0rem;;
   margin: 0;
+  font-size: 16px;
   font-size: 1rem;
   color: var(--sub-ft-color-blue);
   font-weight: 300;
-  line-height: 1.5;
+  line-height: 1.6;
   list-style: none;
 }
 .focus {
-  color:#555;
-  font-weight: normal;
+  color:var(--sub-ft-color-blue);
+  font-weight: bold;
+  font-size: 16px;
   font-size: 1rem;
 }
 
-section {padding: 1rem 0rem 2rem 0rem;}
+section {padding: 16px 0px 32px 0px;padding: 1rem 0rem 2rem 0rem;}
 
 .container-fluid {padding: 0;}
 .section--color {background-color: var(--main-bg-color-white);}
-.section--white {background-color: white;}
+.section--white {background-color: #fafafa;}
 
 /* Banner & Header Section*/
 .container-fluid__banner {
@@ -142,24 +153,25 @@ and (orientation : landscape){
 
 .text-box {
 text-align: center;
+margin: 16px 0px 16px 0px;
 margin: 1rem 0rem 1rem 0rem;
 }
 
 /* adjust name in banner */
-.text-box--padding-bottom{padding-bottom: 15rem;}
+.text-box--padding-bottom{padding-bottom: 240px;padding-bottom: 15rem;}
 
 /* fonts and extra styles */
-.text--margin{margin: 0rem 0rem 2rem 0rem;}
-.p--sm {font-size: 0.875rem;}
+.text--margin{margin: 0px 0px 32px 0px;margin: 0rem 0rem 2rem 0rem;}
+.p--sm {font-size: 14px;font-size: 0.935rem;}
 .text--fontweight {font-weight:bold;}
 .text--fontweight2 {font-weight: normal;}
 .p--color{color: var(--sub-ft-color-blue);}
-.text-box__text--margintop {margin-top: 1rem}
-.text--padding {padding: 1.5rem 0rem .5rem 0.25rem;}
-.text--paddingleft {padding-left: .25rem;}
-.text--paddingbottom {padding-bottom: 2rem;}
-.text--paddingtop{padding-top: 2rem}
-.text--align{text-align: center}
+.text-box__text--margintop {margin-top: 16px;margin-top: 1rem}
+.text--padding {padding: 24px 0px 8px 4px;padding: 1.5rem 0rem .5rem 0.25rem;}
+.text--paddingleft {padding-left: 4px;padding-left: .25rem;}
+.text--paddingbottom {padding-bottom: 32px;padding-bottom: 2rem;}
+.text--paddingtop{padding-top: 32px;padding-top: 2rem}
+.text--alignproject{text-align: center}
 
 
 /* navigation bar with arrow*/
@@ -178,8 +190,11 @@ but not on this page */
   position: fixed;
   top: 11%;
   left: 86%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
   text-align: center;
 }
 
@@ -191,43 +206,69 @@ but not on this page */
 }
 
 .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
   padding: 0;
 }
 
 .navbar ul.nav li, .arrow {
+  width: 112px;
   width: 7rem;
+  padding: 0px 0px;
   padding: 0rem 0rem;
 }
 
 .navbar ul.nav li a, .navbar ul.nav li a:hover {
   text-decoration: none;
-  color: white;
+  color: var(--sub5-ft-colorwhite);
   font-weight: normal;
+  padding: 32px 0px;
   padding: 2rem 0rem;/* height of the nav */
 }
 
 li.nav__animation, .arrow {
+ display: -webkit-box;
+ display: -ms-flexbox;
  display: flex;
- justify-content: center;
- align-items: center;
+ -webkit-box-pack: center;
+     -ms-flex-pack: center;
+         justify-content: center;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
 }
 .nav__animation i{
+ font-size: 32px;
  font-size: 2rem;
+ padding: 24px 0px;
  padding: 1.5rem 0rem;
- color: white;
+ color: var(--sub5-ft-colorwhite);
  position: relative;
- animation-name: mymove;
- animation-duration: 1.2s;
- animation-iteration-count: infinite;
- animation-timing-function: linear;
+ -webkit-animation-name: mymove;
+         animation-name: mymove;
+ -webkit-animation-duration: 1.2s;
+         animation-duration: 1.2s;
+ -webkit-animation-iteration-count: infinite;
+         animation-iteration-count: infinite;
+ -webkit-animation-timing-function: linear;
+         animation-timing-function: linear;
 }
 
 .arrow i{
+  padding: 8px 0px;
   padding: 0.5rem 0rem;
+  font-size: 32px;
   font-size: 2rem;
-  color:white;
+  color:var(--sub5-ft-colorwhite);
+}
+
+@-webkit-keyframes mymove {
+   0% {top: 0px;}
+   50% {top: 10px;}
+   100% {top: 0px;}
 }
 
 @keyframes mymove {
@@ -254,7 +295,7 @@ this is to fix this */
 
 /* active a:hover is in there because of a border that comes from the bootstrap css */
 ul.nav.nav-tabs, ul.nav.nav-tabs a, .navbar ul.nav li.active a:hover {
-  color: white;
+  color: var(--sub5-ft-colorwhite);
   border: none;
   border-radius: 0px;
   margin: 0;
@@ -273,21 +314,32 @@ ul.nav li a:hover {
 
 /* main section: About Me etc.*/
 .container-fluid--align {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 65%;
 }
 
-.row-width-30 {flex: 1 1 30%;}
-.row--margintop {margin-top:1rem;}
-.row--margintop2 {margin-top:2rem;}
-.col--margin {margin: 1rem 1rem;}
+.row-width-30 {-webkit-box-flex: 1;-ms-flex: 1 1 30%;flex: 1 1 30%;}
+.row--margintop {margin-top: 16px;margin-top:1rem;}
+.row--margintop2 {margin-top: 32px;margin-top:2rem;}
+.col--margin {margin: 16px 16px;margin: 1rem 1rem;}
 
 .col--picture {
   width: 25%;
@@ -302,22 +354,32 @@ height: auto;
 
 .experience {
   padding: 0;
+  margin: 8px 0px 0px 0px;
   margin: 0.5rem 0rem 0rem 0rem;
 }
 
 .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: var(--main-ft-color-red); /*#9c1e1e*/
   font-weight: normal;
+  font-size: 16px;
   font-size: 1rem;
+  margin: 12px 0px 16px 0px;
   margin: 0.75rem 0rem 1rem 0rem;
 }
 .location i {
+  margin-right: 8px;
   margin-right: 0.5rem;
 }
 .location .fa-link {
+  padding-left: 8px;
   padding-left: 0.5rem;
+  margin-left: 8px;
   margin-left: 0.5rem;
   border-left: var(--main-ft-color-red) solid 1px;
 }
@@ -326,15 +388,21 @@ height: auto;
 }
 
 /* size of the stars*/
-.fas {font-size: 0.825rem;}
+.fas {font-size: 13.2px;font-size: 0.825rem;}
 
 /* skills section styles */
 .skills li{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  line-height: 30.4px;
   line-height: 1.9rem;
 }
 .skills{
+  font-size: 14.96px;
   font-size: 0.935rem;
   font-weight: 400;
   color: var(--sub4-ft-colorfaded-blue);
@@ -343,27 +411,34 @@ height: auto;
 .fa--color {color: rgba(6,39,59,0.9);}
 .fa--colorfaded {color: rgba(6,39,59,0.25);}
 
-.skills--hover i{transition: padding-left 250ms ease-in-out;}
+.skills--hover i{-webkit-transition: padding-left 250ms ease-in-out;transition: padding-left 250ms ease-in-out;}
 /* never place the transition on the hover
 it will result in a terrible snap back effect */
-.skills--hover:hover i {padding-left: 0.2rem;}
+.skills--hover:hover i {padding-left: 3.2px;padding-left: 0.2rem;}
 /* if you place it directly on the skills--icons
 the icons will only change when hovered on directly
 but not on li*/
 .skills li {
+  -webkit-transition: background-color 150ms ease-in 0ms;
   transition: background-color 150ms ease-in 0ms;
+  padding: 0px 4px;
   padding:0rem 0.25rem;
 }
 .skills--hover:hover{
   background-color: white;
   border-radius: 2px;
+  padding: 0px -16px;
   padding: 0rem -1rem;
 }
 
 /*project section */
 .col-sm-6--position{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .project {
 width: 100%;
@@ -379,13 +454,17 @@ position: relative;
   height: auto;               /*without this the picture will grow 10px on hover*/
   display: block;             /* 11px is to fix a 1px bug where the pic needs addition 1px */
   opacity: 1;
-  transform:translate3d(-10px, 0px, 0px);/* set it to the left on purpose*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transform:translate3d(-10px, 0px, 0px);
+          transform:translate3d(-10px, 0px, 0px);/* set it to the left on purpose*/
+  -webkit-transition: all 250ms linear 0ms;
   transition: all 250ms linear 0ms;
   overflow: hidden;
 }
 /* values on hover effect for better animation */
 .project:hover img{
-  transform:translate3d(0px, 0px, 0px);/* sets it back to original position*/
+  -webkit-transform:translate3d(0px, 0px, 0px);
+          transform:translate3d(0px, 0px, 0px);/* sets it back to original position*/
 }
 
 div.project div.project__link-box {
@@ -397,21 +476,30 @@ div.project div.project__link-box {
   right:0%;
   border-radius: 0px 0px 0px 4px;
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 100;
 }
 
 div.project div.project__link-box i {
   color: #f9f9f9;
+  font-size: 16px;
   font-size: 1rem;
+  padding: 0px 0px 1.6px 4.8px;
   padding:0rem 0rem 0.1rem 0.3rem;
 }
 
 .project--border {
-  border: #f0f0f0 solid 1px;
+
   box-shadow: 0px 3px 10px #d1d1d1;
 }
 
@@ -425,11 +513,15 @@ div.project div.project__link-box i {
    overflow: hidden;
    width: 0;
    height: 100%;
+   -webkit-transition: .5s ease;
    transition: .5s ease;
    opacity: 1;
+   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
    z-index: 0;
-   backface-visibility: hidden;
-   transform: translateZ(0) scale(1.0, 1.0);
+   -webkit-backface-visibility: hidden;
+           backface-visibility: hidden;
+   -webkit-transform: translateZ(0) scale(1.0, 1.0);
+           transform: translateZ(0) scale(1.0, 1.0);
 }
 
 /* overlay for faded red color
@@ -445,6 +537,7 @@ div.project div.project__overlay div.project__description p {
   left: 10%;
   color: #dfdfdf;
   white-space: nowrap;
+  font-size: 18px;
   font-size: 1.125rem;
 }
 
@@ -452,16 +545,21 @@ div.project div.project__overlay div.project__description p {
 opacity 1, otherwise it is 0*/
 div.project:hover div.project__header {
   opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 div.project div.project__header{
+    -webkit-transition: all 250ms linear 0ms;
     transition: all 250ms linear 0ms;
     opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 div.project h3.project__header__text {
+  font-size: 24px;
   font-size:1.5rem;
   color: #dfdfdf;
   font-weight: normal;
+  padding-bottom: 5.6px;
   padding-bottom: 0.35rem;
   position: absolute;
   top: 10%;
@@ -469,6 +567,7 @@ div.project h3.project__header__text {
   border-bottom: 2px solid transparent;
   width: 0%;
   white-space: nowrap;
+  -webkit-transition: all 550ms linear 0ms;
   transition: all 550ms linear 0ms;
 }
 
@@ -480,34 +579,45 @@ div.project:hover .project__header__text {
   z-index: 1;
 }
 div.project div.project__header h3 {
+  -webkit-transition: all 450ms linear 0ms;
   transition: all 450ms linear 0ms;
 }
 /* footer */
 footer {
   background-color: var(--sub-ft-color-blue);
+  height: 368px;
   height: 23rem;
+  padding: 16px 0px;
   padding: 1rem 0rem;
 }
 
 
 /*footer font for contrast */
-.text-box__text--color2 {color: white;}
+.text-box__text--color2 {color: var(--sub5-ft-colorwhite);}
 .text-box__text--color3, footer h4 {color: #f9f9f9;}
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row;
-  justify-content: center;
+  -ms-flex-flow: row;
+      flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .contact__icon {
-  background-color: white;
+  background-color: var(--sub5-ft-colorwhite);
   border-radius: 50px;
   text-align: center;
+  width: 40px;
   width: 2.5rem;
+  padding: 8px 0px;
   padding: 0.5rem 0rem;
+  margin: 0px 16px;
   margin: 0rem 1rem;
 }
-.contact__icon {transition: background-color 250ms linear 0ms;}
+.contact__icon {-webkit-transition: background-color 250ms linear 0ms;transition: background-color 250ms linear 0ms;}
 .contact__icon:hover{background-color:#d9d9d9;}
 .contact__mail, .contact__facebook {color: var(--sub-ft-color-blue);}
-.contact__mail {font-size: 1.125rem;}
+.contact__mail {font-size: 18px;font-size: 1.125rem;}
