@@ -80,10 +80,10 @@ h2 {
 .text--size{font-size: 28px;font-size: 1.75rem;}
 
 h3 {
-  color:   var(--sub-ft-color-blue);
+  color:   var(--sub4-ft-colorfaded-blue);
   font-size: 20px;
   font-size: 1.25rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
   margin: 0px 0px 8px 0px;
   margin: 0rem 0rem 0.5rem 0rem;
@@ -95,15 +95,16 @@ h4 {
   color: var(--sub4-ft-colorfaded-blue);
   font-size: 12px;
   font-size: 0.75rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 p {
-  color: var(--sub-ft-color-blue);
+  color: var(--sub4-ft-colorfaded-blue);
   font-size: 16px;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.6;
+  letter-spacing:;
   margin: 8px 0px 0px 0px;
   margin: 0.5rem 0rem 0rem 0rem;
 }
@@ -113,13 +114,13 @@ ul {
   margin: 0;
   font-size: 16px;
   font-size: 1rem;
-  color: var(--sub-ft-color-blue);
-  font-weight: 300;
+  color: var(--sub4-ft-colorfaded-blue);
+  font-weight: 400;
   line-height: 1.6;
   list-style: none;
 }
 .focus {
-  color:var(--sub-ft-color-blue);
+  color:var(--sub4-ft-colorfaded-blue);
   font-weight: bold;
   font-size: 16px;
   font-size: 1rem;
@@ -164,8 +165,8 @@ margin: 1rem 0rem 1rem 0rem;
 .text--margin{margin: 0px 0px 32px 0px;margin: 0rem 0rem 2rem 0rem;}
 .p--sm {font-size: 14px;font-size: 0.935rem;}
 .text--fontweight {font-weight:bold;}
-.text--fontweight2 {font-weight: normal;}
-.p--color{color: var(--sub-ft-color-blue);}
+.text--fontweight2 {font-weight: 600;}
+.p--color{color: var(--sub4-ft-colorfaded-blue);}
 .text-box__text--margintop {margin-top: 16px;margin-top: 1rem}
 .text--padding {padding: 24px 0px 8px 4px;padding: 1.5rem 0rem .5rem 0.25rem;}
 .text--paddingleft {padding-left: 4px;padding-left: .25rem;}
