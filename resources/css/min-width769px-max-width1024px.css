@@ -11,7 +11,7 @@
 .navbar ul.nav.nav-tabs li, .arrow {width: 6rem;}
 .navbar ul.nav.nav-tabs li a, .navbar ul.nav.nav-tabs li a:hover {
   padding: 1.5rem 0rem;
-  font-size: 0.935rem;
+  font-size: 0.9375rem;
 }
 
 .nav__animation i, .arrow i {
