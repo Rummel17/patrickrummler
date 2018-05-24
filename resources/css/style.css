@@ -13,6 +13,8 @@ body {
 .max--width{
   max-width: 1980px;
 }
+
+
 /* fonts/ main colors & main styles */
 @font-face {
   font-family: 'Open Sans', sans-serif;
@@ -454,7 +456,7 @@ position: relative;
 .project img {
   max-width: calc(100% + 11px);/* the transform offset needs to be equalized*/
   height: auto;               /*without this the picture will grow 10px on hover*/
-  display: block;             /* 11px is to fix a 1px bug where the pic needs addition 1px */
+  display: block;             /* 11px is to fix a 1px bug where the pic needs + 1px */
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   -webkit-transform:translate3d(-10px, 0px, 0px);
