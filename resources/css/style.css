@@ -177,6 +177,15 @@ margin: 1rem 0rem 1rem 0rem;
 .text--paddingtop{padding-top: 32px;padding-top: 2rem}
 .text--alignproject{text-align: center}
 .text--justify{text-align: justify}
+.link{
+  color:rgba(110,23,25, 0.85);
+  text-decoration: none;
+  font-weight: bold;
+}
+.link:hover{
+  color:var(--main-ft-color-red);
+  text-decoration: underline;
+}
 
 
 /* navigation bar with arrow*/
@@ -360,6 +369,10 @@ height: auto;
 /*to adjust picture with eye */
 .col-sm-1 {
   margin-right: 15px;
+}
+
+.col-sm-4, .col-sm-6, .col-sm-12 {
+  margin-left: 1rem;
 }
 
 .experience {
