@@ -176,6 +176,7 @@ margin: 1rem 0rem 1rem 0rem;
 .text--paddingbottom {padding-bottom: 32px;padding-bottom: 2rem;}
 .text--paddingtop{padding-top: 32px;padding-top: 2rem}
 .text--alignproject{text-align: center}
+.text--justify{text-align: justify}
 
 
 /* navigation bar with arrow*/
@@ -200,6 +201,7 @@ but not on this page */
   -ms-flex-flow: column;
       flex-flow: column;
   text-align: center;
+  z-index: 10;
 }
 
 .arrow {
@@ -355,6 +357,10 @@ ul.nav li a:hover {
 max-width:100%;
 height: auto;
 }
+/*to adjust picture with eye */
+.col-sm-1 {
+  margin-right: 15px;
+}
 
 .experience {
   padding: 0;
@@ -411,6 +417,7 @@ height: auto;
   font-weight: 400;
   color: var(--sub4-ft-colorfaded-blue);
 }
+.margin--bottom{margin-bottom: 20px;}
 
 .fa--color {color: rgba(6,39,59,0.9);}
 .fa--colorfaded {color: rgba(6,39,59,0.25);}
