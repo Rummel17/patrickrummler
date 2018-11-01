@@ -43,6 +43,7 @@ body {
 :root {
   --main-bg-color-white:#f0f0f0;/*f0f0f0 passt auch*/
   --main-ft-color-red: rgba(110,23,25, 1);/*das rot */
+  --border-color-red: rgba(200,23,25,1);/*border rot*/
   --sub-ft-color-blue: rgba(6,39,59,1);/*footer etc.*/
   --sub4-ft-colorfaded-blue: rgba(6,40,61,0.7);/* blue faded */
   --sub5-ft-colorwhite: #fafafa;
@@ -114,14 +115,25 @@ p {
 ul {
   padding: 16px 0px 0px 0px;
   padding: 1rem 0rem 0rem 0rem;;
-  margin: 0;
+  margin: 0px 0px 0px 0px;
   font-size: 16px;
-  font-size: 1rem;
+  font-size: 0.935rem;
   color: var(--sub4-ft-colorfaded-blue);
   font-weight: 400;
   line-height: 1.6;
-  list-style: none;
+  list-style:none;
 }
+ul.experience {
+  list-style: unset;
+}
+
+ul.experience li {
+  margin-left: 1.125rem;
+}
+ul.experience li.location {
+  margin-left: 0;
+}
+
 .focus {
   color:var(--sub4-ft-colorfaded-blue);
   font-weight: 600;
@@ -133,7 +145,7 @@ section {padding: 16px 0px 32px 0px;padding: 1rem 0rem 2rem 0rem;}
 
 .container-fluid {padding: 0;}
 .section--color {background-color: var(--main-bg-color-white);}
-.section--white {background-color: #fafafa;}
+.section--white {background-color: var(--sub5-ft-colorwhite);}
 
 /* Banner & Header Section*/
 .container-fluid__banner {
@@ -178,13 +190,44 @@ margin: 1rem 0rem 1rem 0rem;
 .text--alignproject{text-align: center}
 .text--justify{text-align: justify}
 .link{
-  color:rgba(110,23,25, 0.85);
   text-decoration: none;
-  font-weight: bold;
+  border-bottom: 2px solid var(--border-color-red);
+  color: var(--sub4-ft-colorfaded-blue);
+  font-weight:600;
 }
 .link:hover{
-  color:var(--main-ft-color-red);
-  text-decoration: underline;
+  text-decoration: none;
+}
+.experience__online{
+  display: flex;
+  flex-flow: row;
+}
+
+/*language section*/
+
+div.language-box {
+  position: absolute;
+  top:5%;
+  left:5%;
+}
+
+ul.languages {
+  padding-top: 5px;
+}
+
+.languages {
+  display: flex;
+  flex-flow:row;
+  align-items: center;
+}
+
+.languages li {
+  margin: 0px 10px;
+}
+
+.flag {
+  width: 30px;
+  height: 30px;
 }
 
 
@@ -196,13 +239,14 @@ were unable to create a position: relative, position: absolute, position: fixed
 structure, to make fixed start furhter down the page as intended. Worekd on learning Page
 but not on this page */
 
+
 .navbar--smartphone {
   display: none;
 }
 
 .navbar {
   position: fixed;
-  top: 11%;
+  top: 5%;
   left: 86%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -410,6 +454,74 @@ height: auto;
   color: var(--main-ft-color-red);
 }
 
+
+/* Popup container - can be anything you want */
+
+.business--cards{
+  width: 240px;
+  height: 150px;
+  margin-right: 10px;
+}
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    background-color: var(--sub5-ft-colorwhite);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 0px;
+    position: absolute;
+    z-index: 100;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -200px;
+    width: 540px;
+    height: 180px;
+    box-shadow: 3px 3px 10px #d1d1d1;
+    display: flex;
+    flex-flow: row;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--sub5-ft-colorwhite) transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
 /* size of the stars*/
 .fas {font-size: 13.2px;font-size: 0.825rem;}
 
@@ -467,7 +579,7 @@ but not on li*/
 .project {
 width: 100%;
 max-width: 400px;
-height: auto;
+max-height: auto;
 overflow: hidden;
 position: relative;
 }

@@ -82,7 +82,9 @@
   .row--margintop2 {margin-top: 1rem;}
   footer {height: 20rem;}
 
-
-  /* project section */
-
-}
+  div.language-box {
+    position: absolute;
+    top:2%;
+    left:50%;
+    margin-left:-75px;
+  }
