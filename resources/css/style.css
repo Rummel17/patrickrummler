@@ -195,14 +195,10 @@ margin: 1rem 0rem 1rem 0rem;
   color: var(--sub4-ft-colorfaded-blue);
   font-weight:600;
 }
-.link:hover{
+
+a:link, a:visited, a:hover, a:active {
   text-decoration: none;
 }
-.experience__online{
-  display: flex;
-  flex-flow: row;
-}
-
 /*language section*/
 
 div.language-box {
