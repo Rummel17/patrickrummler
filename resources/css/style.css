@@ -203,8 +203,8 @@ a:link, a:visited, a:hover, a:active {
 
 div.language-box {
   position: absolute;
-  top:5%;
-  left:5%;
+  top:4%;
+  left:2%;
 }
 
 ul.languages {
@@ -456,8 +456,13 @@ height: auto;
 .business--cards{
   width: 240px;
   height: 150px;
-  margin-right: 10px;
 }
+
+.business--cards__marginright{
+  margin-right: 20px;
+}
+
+
 .popup {
     position: relative;
     display: inline-block;
@@ -484,8 +489,6 @@ height: auto;
     width: 540px;
     height: 180px;
     box-shadow: 3px 3px 10px #d1d1d1;
-    display: flex;
-    flex-flow: row;
 }
 
 /* Popup arrow */
@@ -574,6 +577,7 @@ but not on li*/
 }
 .project {
 width: 100%;
+height: 96%;
 max-width: 400px;
 max-height: auto;
 overflow: hidden;
@@ -592,6 +596,7 @@ position: relative;
   -webkit-transition: all 250ms linear 0ms;
   transition: all 250ms linear 0ms;
   overflow: hidden;
+  margin-top: -8px;
 }
 /* values on hover effect for better animation */
 .project:hover img{
