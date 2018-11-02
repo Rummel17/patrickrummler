@@ -4,8 +4,11 @@ body, html {
   font-family: 'Open Sans', sans-serif;
 }
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
+  -ms-flex-flow: column;
+      flex-flow: column;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -52,6 +55,7 @@ body {
 
 h1 {
   font-size: 64px;
+  font-size: 64px;
   font-size: 4rem;/* This is messing up the lowest width for smartphones*/
   font-weight: bold;
   color: var(--main-ft-color-red);
@@ -60,6 +64,7 @@ h1 {
   letter-spacing: -1px;
 }
 hr {
+  margin: 40px 0px 40px 0px;
   margin: 40px 0px 40px 0px;
   margin: 2.5rem 0rem 2.5rem 0rem;
 }
@@ -71,40 +76,46 @@ h2 {
   color: var(--sub-ft-color-blue);
   font-weight: 400;
   font-size: 24px;
+  font-size: 24px;
   font-size: 1.5rem;
+  margin: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   margin: 0rem 0rem 0rem 0rem;
   letter-spacing: -2px;
 }
 
 /* h2 font-size for headings Projects, Skils etc. */
-.text-box__text--fontsize {font-size: 40px;font-size:2.5rem;}
-.text-box__text--fontsize__japanese{font-size: 2rem;}
-.text-box__text--margin{margin: 0px 0px 16px 0px;margin: 0rem 0rem 1rem 0rem;}
+.text-box__text--fontsize {font-size: 40px;font-size: 40px;font-size:2.5rem;}
+.text-box__text--fontsize__japanese{font-size: 32px;font-size: 2rem;}
+.text-box__text--margin{margin: 0px 0px 16px 0px;margin: 0px 0px 16px 0px;margin: 0rem 0rem 1rem 0rem;}
 /*red headings */
 .text-box__text--color,
 .text--color{color: var(--main-ft-color-red);}
-.text--size{font-size: 28px;font-size: 1.75rem;}
-.text--fontsize__japanese {font-size: 1.5rem;}
+.text--size{font-size: 28px;font-size: 28px;font-size: 1.75rem;}
+.text--fontsize__japanese {font-size: 24px;font-size: 1.5rem;}
 
 h3 {
   color:   var(--sub4-ft-colorfaded-blue);
+  font-size: 20px;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
   margin: 0px 0px 8px 0px;
+  margin: 0px 0px 8px 0px;
   margin: 0rem 0rem 0.5rem 0rem;
   letter-spacing: -1px;
 }
 h3.japanese{
+  font-size: 18px;
   font-size: 1.125rem;
 }
 /*h3 smaller font */
-.text-box__text--small{font-size: 18px;font-size: 1.125rem;}
+.text-box__text--small{font-size: 18px;font-size: 18px;font-size: 1.125rem;}
 
 h4 {
   color: var(--sub4-ft-colorfaded-blue);
+  font-size: 12px;
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: 400;
@@ -113,19 +124,23 @@ h4 {
 p {
   color: var(--sub4-ft-colorfaded-blue);
   font-size: 15px;
+  font-size: 15px;
   font-size: 0.9375rem;
   font-weight: 400;
   line-height: 1.9;
   letter-spacing:;
+  margin: 8px 0px 0px 0px;
   margin: 8px 0px 0px 0px;
   margin: 0.5rem 0rem 0rem 0rem;
   letter-spacing: -0.5px;
 }
 ul {
   padding: 16px 0px 0px 0px;
+  padding: 16px 0px 0px 0px;
   padding: 1rem 0rem 0rem 0rem;;
   margin: 0px 0px 0px 0px;
   font-size: 16px;
+  font-size: 14.96px;
   font-size: 0.935rem;
   color: var(--sub4-ft-colorfaded-blue);
   font-weight: 400;
@@ -137,6 +152,7 @@ ul.experience {
 }
 
 ul.experience li {
+  margin-left: 18px;
   margin-left: 1.125rem;
 }
 ul.experience li.location {
@@ -147,10 +163,11 @@ ul.experience li.location {
   color:var(--sub4-ft-colorfaded-blue);
   font-weight: 600;
   font-size: 16px;
+  font-size: 16px;
   font-size: 1rem;
 }
 
-section {padding: 16px 0px 32px 0px;padding: 1rem 0rem 2rem 0rem;}
+section {padding: 16px 0px 32px 0px;padding: 16px 0px 32px 0px;padding: 1rem 0rem 2rem 0rem;}
 
 .container-fluid {padding: 0;}
 .section--color {background-color: var(--main-bg-color-white);}
@@ -179,26 +196,27 @@ and (orientation : landscape){
 .text-box {
 text-align: center;
 margin: 16px 0px 16px 0px;
+margin: 16px 0px 16px 0px;
 margin: 1rem 0rem 1rem 0rem;
 }
 
 /* adjust name in banner */
-.text-box--padding-bottom{padding-bottom: 240px;padding-bottom: 15rem;}
+.text-box--padding-bottom{padding-bottom: 240px;padding-bottom: 240px;padding-bottom: 15rem;}
 
 /* fonts and extra styles */
-.text--margin{margin: 0px 0px 32px 0px;margin: 0rem 0rem 2rem 0rem;}
-.p--sm {font-size: 14px;font-size: 0.935rem;}
+.text--margin{margin: 0px 0px 32px 0px;margin: 0px 0px 32px 0px;margin: 0rem 0rem 2rem 0rem;}
+.p--sm {font-size: 14px;font-size: 14.96px;font-size: 0.935rem;}
 .text--fontweight {font-weight:bold;}
 .text--fontweight2 {font-weight: 600;}
 .p--color{color: var(--sub4-ft-colorfaded-blue);}
-.text-box__text--margintop {margin-top: 16px;margin-top: 1rem}
-.text--padding {padding: 24px 0px 8px 4px;padding: 1.5rem 0rem .5rem 0.25rem;}
-.text--paddingleft {padding-left: 4px;padding-left: .25rem;}
-.text--paddingbottom {padding-bottom: 32px;padding-bottom: 2rem;}
-.text--paddingtop{padding-top: 32px;padding-top: 2rem}
+.text-box__text--margintop {margin-top: 16px;margin-top: 16px;margin-top: 1rem}
+.text--padding {padding: 24px 0px 8px 4px;padding: 24px 0px 8px 4px;padding: 1.5rem 0rem .5rem 0.25rem;}
+.text--paddingleft {padding-left: 4px;padding-left: 4px;padding-left: .25rem;}
+.text--paddingbottom {padding-bottom: 32px;padding-bottom: 32px;padding-bottom: 2rem;}
+.text--paddingtop{padding-top: 32px;padding-top: 32px;padding-top: 2rem}
 .text--alignproject{text-align: center}
 .text--justify{text-align: justify}
-.japanese__2 {font-size: 1.25rem;}
+.japanese__2 {font-size: 20px;font-size: 1.25rem;}
 .link{
   text-decoration: none;
   border-bottom: 2px solid var(--border-color-red);
@@ -222,9 +240,14 @@ ul.languages {
 }
 
 .languages {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow:row;
-  align-items: center;
+  -ms-flex-flow:row;
+      flex-flow:row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .languages li {
@@ -282,7 +305,9 @@ but not on this page */
 
 .navbar ul.nav li, .arrow {
   width: 112px;
+  width: 112px;
   width: 7rem;
+  padding: 0px 0px;
   padding: 0px 0px;
   padding: 0rem 0rem;
 }
@@ -291,6 +316,7 @@ but not on this page */
   text-decoration: none;
   color: var(--sub5-ft-colorwhite);
   font-weight: 600;
+  padding: 32px 0px;
   padding: 32px 0px;
   padding: 2rem 0rem;/* height of the nav */
 }
@@ -308,7 +334,9 @@ li.nav__animation, .arrow {
 }
 .nav__animation i{
  font-size: 32px;
+ font-size: 32px;
  font-size: 2rem;
+ padding: 24px 0px;
  padding: 24px 0px;
  padding: 1.5rem 0rem;
  color: var(--sub5-ft-colorwhite);
@@ -325,7 +353,9 @@ li.nav__animation, .arrow {
 
 .arrow i{
   padding: 8px 0px;
+  padding: 8px 0px;
   padding: 0.5rem 0rem;
+  font-size: 32px;
   font-size: 32px;
   font-size: 2rem;
   color:var(--sub5-ft-colorwhite);
@@ -403,9 +433,9 @@ ul.nav li a:hover {
 }
 
 .row-width-30 {-webkit-box-flex: 1;-ms-flex: 1 1 30%;flex: 1 1 30%;}
-.row--margintop {margin-top: 16px;margin-top:1rem;}
-.row--margintop2 {margin-top: 32px;margin-top:2rem;}
-.col--margin {margin: 16px 16px;margin: 1rem 1rem;}
+.row--margintop {margin-top: 16px;margin-top: 16px;margin-top:1rem;}
+.row--margintop2 {margin-top: 32px;margin-top: 32px;margin-top:2rem;}
+.col--margin {margin: 16px 16px;margin: 16px 16px;margin: 1rem 1rem;}
 
 .col--picture {
   width: 25%;
@@ -423,11 +453,13 @@ height: auto;
 }
 
 .col-sm-4, .col-sm-6, .col-sm-12 {
+  margin-left: 16px;
   margin-left: 1rem;
 }
 
 .experience {
   padding: 0;
+  margin: 8px 0px 0px 0px;
   margin: 8px 0px 0px 0px;
   margin: 0.5rem 0rem 0rem 0rem;
 }
@@ -442,17 +474,22 @@ height: auto;
   color: var(--main-ft-color-red); /*#9c1e1e*/
   font-weight: normal;
   font-size: 16px;
+  font-size: 16px;
   font-size: 1rem;
+  margin: 12px 0px 16px 0px;
   margin: 12px 0px 16px 0px;
   margin: 0.75rem 0rem 1rem 0rem;
 }
 .location i {
   margin-right: 8px;
+  margin-right: 8px;
   margin-right: 0.5rem;
 }
 .location .fa-link {
   padding-left: 8px;
+  padding-left: 8px;
   padding-left: 0.5rem;
+  margin-left: 8px;
   margin-left: 8px;
   margin-left: 0.5rem;
   border-left: var(--main-ft-color-red) solid 1px;
@@ -503,7 +540,7 @@ height: auto;
 }
 
 /* Popup arrow */
-.popup .popuptext::after {
+.popup .popuptext:after {
     content: "";
     position: absolute;
     top: 100%;
@@ -523,17 +560,17 @@ height: auto;
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+    from {opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+    to {opacity: 1;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
 }
 
 @keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity:1 ;}
+    from {opacity: 0;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";}
+    to {opacity:1 ;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";}
 }
 
 /* size of the stars*/
-.fas {font-size: 13.2px;font-size: 0.825rem;}
+.fas {font-size: 13.2px;font-size: 13.2px;font-size: 0.825rem;}
 
 /* skills section styles */
 .skills li{
@@ -544,9 +581,11 @@ height: auto;
       -ms-flex-pack: justify;
           justify-content: space-between;
   line-height: 30.4px;
+  line-height: 30.4px;
   line-height: 1.9rem;
 }
 .skills{
+  font-size: 14.96px;
   font-size: 14.96px;
   font-size: 0.935rem;
   font-weight: 400;
@@ -560,7 +599,7 @@ height: auto;
 .skills--hover i{-webkit-transition: padding-left 250ms ease-in-out;transition: padding-left 250ms ease-in-out;}
 /* never place the transition on the hover
 it will result in a terrible snap back effect */
-.skills--hover:hover i {padding-left: 3.2px;padding-left: 0.2rem;}
+.skills--hover:hover i {padding-left: 3.2px;padding-left: 3.2px;padding-left: 0.2rem;}
 /* if you place it directly on the skills--icons
 the icons will only change when hovered on directly
 but not on li*/
@@ -568,11 +607,13 @@ but not on li*/
   -webkit-transition: background-color 150ms ease-in 0ms;
   transition: background-color 150ms ease-in 0ms;
   padding: 0px 4px;
+  padding: 0px 4px;
   padding:0rem 0.25rem;
 }
 .skills--hover:hover{
   background-color: white;
   border-radius: 2px;
+  padding: 0px -16px;
   padding: 0px -16px;
   padding: 0rem -1rem;
 }
@@ -641,7 +682,9 @@ div.project div.project__link-box {
 div.project div.project__link-box i {
   color: #f9f9f9;
   font-size: 16px;
+  font-size: 16px;
   font-size: 1rem;
+  padding: 0px 0px 1.6px 4.8px;
   padding: 0px 0px 1.6px 4.8px;
   padding:0rem 0rem 0.1rem 0.3rem;
 }
@@ -686,6 +729,7 @@ div.project div.project__overlay div.project__description p {
   color: #dfdfdf;
   white-space: nowrap;
   font-size: 18px;
+  font-size: 18px;
   font-size: 1.125rem;
 }
 
@@ -704,9 +748,11 @@ div.project div.project__header{
 
 div.project h3.project__header__text {
   font-size: 24px;
+  font-size: 24px;
   font-size:1.5rem;
   color: #dfdfdf;
   font-weight: normal;
+  padding-bottom: 5.6px;
   padding-bottom: 5.6px;
   padding-bottom: 0.35rem;
   position: absolute;
@@ -734,7 +780,9 @@ div.project div.project__header h3 {
 footer {
   background-color: var(--sub-ft-color-blue);
   height: 368px;
+  height: 368px;
   height: 23rem;
+  padding: 16px 0px;
   padding: 16px 0px;
   padding: 1rem 0rem;
 }
@@ -759,13 +807,16 @@ footer {
   border-radius: 50px;
   text-align: center;
   width: 40px;
+  width: 40px;
   width: 2.5rem;
   padding: 8px 0px;
+  padding: 8px 0px;
   padding: 0.5rem 0rem;
+  margin: 0px 16px;
   margin: 0px 16px;
   margin: 0rem 1rem;
 }
 .contact__icon {-webkit-transition: background-color 250ms linear 0ms;transition: background-color 250ms linear 0ms;}
 .contact__icon:hover{background-color:#d9d9d9;}
 .contact__mail, .contact__facebook {color: var(--sub-ft-color-blue);}
-.contact__mail {font-size: 18px;font-size: 1.125rem;}
+.contact__mail {font-size: 18px;font-size: 18px;font-size: 1.125rem;}
