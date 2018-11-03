@@ -34,8 +34,8 @@ $.fn.euCookieLawPopup = (function() {
 		compactStyle : false,
 		popupTitle : '',//different field below
 		popupText : '',//to change see fields below
-		buttonContinueTitle : 'Cookies, Lecker!',
-		buttonLearnmoreTitle : 'Igitt, Cookies!',
+		buttonContinueTitle : 'Yummy, cookies!',
+		buttonLearnmoreTitle : 'Cookies, yucky!',
 		buttonLearnmoreOpenInNewWindow : true,
 		agreementExpiresInDays : 30,
 		autoAcceptCookiePolicy : false,
@@ -254,8 +254,8 @@ $(document).ready( function() {
 	if ($(".eupopup").length > 0) {
 		$(document).euCookieLawPopup().init({
 			'info' : 'YOU_CAN_ADD_MORE_SETTINGS_HERE',
-			'popupTitle' : 'Diese Seite nutzt Cookies! &nbsp;',
-			'popupText' : ' Wenn Sie mehr über Cookies auf dieser Seite erfahren möchten klicken Sie <a href="resources/html/cookies.html">hier</a>.</br>Wenn Sie diese Seite weiter Nutzen gehe ich davon aus, dass Sie dem Einsatz der Cookies zustimmen!</br>Sie können Ihre Einstellung jederzeit ändern.'
+			'popupTitle' : 'This website uses cookies!',
+			'popupText' : ' If you want to know more about cookies or the privat policy of this site click <a href="resources/html/cookies.html">here</a>.</br>If you continue using this website, you accept me Cookie Policy! You can change your cookie settings at any time.'
 		});
 	}
 });

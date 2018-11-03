@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta property="og:url" content="www.patrickrummler.de" />
@@ -35,12 +36,11 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- cookie consent -->
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-    <!-- dont use the script tag in the js file. It will not work -->
+    <link rel="stylesheet" type="text/css" href="../css/cookies.css"/>
     <script src="../js/cookie.js"></script>
+    <!-- dont use the script tag in the js file. It will not work -->
   </head>
-  <body class="" data-spy="scroll" data-target="#myScrollspy" data-offset="700">
+  <body class="eupopup eupopup-bottom" data-spy="scroll" data-target="#myScrollspy" data-offset="700">
 
     <header id="top">
 
@@ -75,7 +75,7 @@
         <ul class="nav nav-tabs">
           <li class="nav__animation nav--bordertop sticky"><i class="fas fa-angle-down"></i></li>
           <li><a href="#work">Services</a></li>
-          <li><a href="#education">Arbeit & Bildung</a></li>
+          <li><a href="#education">Arbeit & </br>Bildung</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projekte</a></li>
           <li class="nav--borderbottom"><a href="#contact" class="nav--borderbottom">Kontakt</a></li>
@@ -97,7 +97,7 @@
           <div class="col-sm-12">
             <div class="text-box text-box--margin">
               <h2 class="text-box__text--color text-box__text--margin text-box__text--fontsize text-box__text--letterspacing">Über Mich</h2>
-              <h3 class="text-box__text--small"> "Ich bin ein Übersetzer, Dolmetscher und liebe es zu schreiben. Nebenbei arbeite ich auch als Designer. Beispiele meiner <a href="#projects" class="link">Projekte.</a>"</h3>
+              <h3 class="text-box__text--small"> "Ich bin ein Übersetzer, Dolmetscher und liebe es zu schreiben. Nebenbei arbeite ich auch als Designer. Beispiele meiner <a href="#projects" class="link">Projekte</a>."</h3>
             </div>
             <hr class="">
           </div>
@@ -110,11 +110,11 @@
             </div>
             <h2 class="text--color text--margin text--size text--align">Was ich mache</h2>
             <p class="text--justify">Ich bin freiberuflicher Übersetzer (Japanisch - Deutsch & Englisch - Deutsch). Hauptsächlich übersetze ich Webseiten, Werbung und Artikel. Ich mag es auch Dialoge zu übersetzen und Charaktere in all ihren Facetten zu erschaffen. Deshalb versuche ich nun, im Bereich Übersetzungen für Videospiele, Mangas und Animation Fuß zu fassen.</p>
-            <p class="text--justify">Ich habe auch Erfahrung im Bereich Webcontent-Erstellung und Grafikdesign. Ich schreibe Artikel, erstelle Landingpages, Webseiten, individuelle Visitenkarten, Poster und Webdesigns sowie Reklamedruck für Fahrzeuge. Hier finden Sie einige <a href="#projects" class="link">Beispiele.</a></p>
+            <p class="text--justify">Ich habe auch Erfahrung im Bereich Webcontent-Erstellung und Grafikdesign. Ich schreibe Artikel, erstelle Landingpages, Webseiten, individuelle Visitenkarten, Poster und Webdesigns sowie Reklamedruck für Fahrzeuge. Hier finden Sie einige <a href="#projects" class="link">Beispiele</a>.</p>
 
 
             <p class="hide--sm470 text--justify">Ich habe mehr als 14 Jahre in 10 Präfekturen in Japan gelebt und gearbeitet und verfüge über ein fundiertes Wissen in den Bereichen Japanische Kultur, Japanische Unternehmenskultur und Gesellschaft. Ich liebe es, in einem internationalen Umfeld zu arbeiten, speziell im Bereich Internationaler Austausch. Während meiner Zeit in Japan habe ich über 100 Präsentationen und Vorträge erfolgreich in japanischer Sprache gehalten, beispielsweise zu kulturellen Unterschieden zwischen Japan und Deutschland/Europa, aktuellen Entwicklungen in Deutschland im Bereich Wirtschaft, Gesellschaft und Politik oder zum Thema alternative Energien etc. Darüber hinaus habe ich Events organisiert, darunter kulturelle Events der Deutschen Botschaft in Tokio, Studentenaustausch und Austausch im Bereich Städtepartnerschaft etc.</p>
-            <p class="hide--sm470 text--justify">Ich bin Übersetzer, Japanexperte und Designer mit fundiertem Asien-/Japan-Wissen. <a href="mailto:p.rummel17@gmail.com" class="link">Sprechen Sie mich an!</a></p>
+            <p class="hide--sm470 text--justify">Ich bin Übersetzer, Japanexperte und Designer mit fundiertem Asien-/Japan-Wissen. <a href="mailto:p.rummel17@gmail.com" class="link">Sprechen Sie mich an</a>!</p>
           </div>
           <div class="col-sm-3 col--margin hide--sm470-767">
             <h2 class="text--color text--margin text--size">Info</h2>
@@ -215,7 +215,7 @@
           <div class="col-sm-8 ">
             <ul class="experience ">
               <li class="hide--sm470-767">Erstellung von Landingpages & Homepages</li>
-              <li class="hide--sm470-767">Grafikdesign z. B. </span><div class="popup link" onclick="myFunction()">Visitenkarten<span class="popuptext" id="myPopup"><img src="../images/pascalNazari.png" class="business--cards" alt="business card with bottle logo"><img src="../images/bargmann.png" class="business--cards" alt="business card for a carpenter"></span></div>, Poster, Reklamedruck für Fahrzeuge, Firmenlogos etc.</li>
+              <li class="hide--sm470-767">Grafikdesign z. B. </span><div class="popup link" onclick="myFunction()">Visitenkarten<span class="popuptext" id="myPopup"><img src="../images/pascalNazari.png" class="business--cards business--cards__marginright" alt="business card with bottle logo"><img src="../images/bargmann.png" class="business--cards" alt="business card for a carpenter"></span></div>, Poster, Reklamedruck für Fahrzeuge, Firmenlogos etc.</li>
               <li class="hide--sm470-767">Schreiben von Artikeln auf Japanisch und Deutsch</li>
               <li class="hide--sm470-767">Erstellung von individuellen Reiseprogrammen</li>
               <li class="location"><i class="fas fa-map-marker"></i>Deutschland &#38; Japan</li>

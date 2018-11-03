@@ -61,7 +61,7 @@ h1 {
   color: var(--main-ft-color-red);
   border-bottom: rgba(158,158,158, 0.7) solid 1px;
   display: inline-block;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 hr {
   margin: 40px 0px 40px 0px;
@@ -81,7 +81,7 @@ h2 {
   margin: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   margin: 0rem 0rem 0rem 0rem;
-  letter-spacing: -2px;
+  letter-spacing: -1.5px;
 }
 
 /* h2 font-size for headings Projects, Skils etc. */
@@ -104,7 +104,7 @@ h3 {
   margin: 0px 0px 8px 0px;
   margin: 0px 0px 8px 0px;
   margin: 0rem 0rem 0.5rem 0rem;
-  letter-spacing: -1px;
+  letter-spacing: -0.5px;
 }
 h3.japanese{
   font-size: 18px;
@@ -125,9 +125,9 @@ p {
   color: var(--sub4-ft-colorfaded-blue);
   font-size: 15px;
   font-size: 15px;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 1.9;
+  line-height: 2;
   letter-spacing:;
   margin: 8px 0px 0px 0px;
   margin: 8px 0px 0px 0px;
@@ -140,11 +140,11 @@ ul {
   padding: 1rem 0rem 0rem 0rem;;
   margin: 0px 0px 0px 0px;
   font-size: 16px;
-  font-size: 14.96px;
-  font-size: 0.935rem;
+  font-size: 16px;
+  font-size: 1rem;
   color: var(--sub4-ft-colorfaded-blue);
   font-weight: 400;
-  line-height: 1.6;
+  line-height: 2;
   list-style:none;
 }
 ul.experience {
@@ -205,7 +205,7 @@ margin: 1rem 0rem 1rem 0rem;
 
 /* fonts and extra styles */
 .text--margin{margin: 0px 0px 32px 0px;margin: 0px 0px 32px 0px;margin: 0rem 0rem 2rem 0rem;}
-.p--sm {font-size: 14px;font-size: 14.96px;font-size: 0.935rem;}
+.p--sm {font-size: 16px;font-size: 16px;font-size: 1rem;}
 .text--fontweight {font-weight:bold;}
 .text--fontweight2 {font-weight: 600;}
 .p--color{color: var(--sub4-ft-colorfaded-blue);}
@@ -223,10 +223,15 @@ margin: 1rem 0rem 1rem 0rem;
   color: var(--sub4-ft-colorfaded-blue);
   font-weight:600;
 }
-
-a:link, a:visited, a:hover, a:active {
+/*a.link:hover only for the intext links not the hyperlinks*/
+a:link, a:visited, a.link:hover, a:active {
   text-decoration: none;
 }
+
+a:hover {
+text-decoration: underline;
+}
+
 /*language section*/
 
 div.language-box {
@@ -315,7 +320,7 @@ but not on this page */
 .navbar ul.nav li a, .navbar ul.nav li a:hover {
   text-decoration: none;
   color: var(--sub5-ft-colorwhite);
-  font-weight: 600;
+  font-weight: 400;
   padding: 32px 0px;
   padding: 32px 0px;
   padding: 2rem 0rem;/* height of the nav */
@@ -585,9 +590,9 @@ height: auto;
   line-height: 1.9rem;
 }
 .skills{
-  font-size: 14.96px;
-  font-size: 14.96px;
-  font-size: 0.935rem;
+  font-size: 16px;
+  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   color: var(--sub4-ft-colorfaded-blue);
 }
@@ -816,7 +821,7 @@ footer {
   margin: 0px 16px;
   margin: 0rem 1rem;
 }
-.contact__icon {-webkit-transition: background-color 250ms linear 0ms;transition: background-color 250ms linear 0ms;}
-.contact__icon:hover{background-color:#d9d9d9;}
+.contact__icon {-webkit-transition: background-color 200ms linear 0ms;transition: background-color 250ms linear 0ms;}
+.contact__icon:hover{background-color:#d5d5d5;}
 .contact__mail, .contact__facebook {color: var(--sub-ft-color-blue);}
 .contact__mail {font-size: 18px;font-size: 18px;font-size: 1.125rem;}
