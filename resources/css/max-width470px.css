@@ -58,8 +58,12 @@
     -webkit-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
   }
-  .arrow:hover {
+  a .arrow:hover {
     background-color: var(--main-ft-color-red);
+  }
+
+  a .arrow:active, .arrow:visited {
+    background-color: #062C42;
   }
   .arrow i {
     font-size: 1.5rem;
@@ -82,7 +86,12 @@
   .row--margintop2 {margin-top: 1rem;}
   footer {height: 22rem;}
 
-
+  div.language-box {
+    position: absolute;
+    top:10%;
+    left:50%;
+    margin-left:-75px;
+  }
 
 
   /* project section */
