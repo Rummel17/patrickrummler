@@ -9,7 +9,6 @@
   h3.text-box__text--small{font-size: 1rem;}
   div.project h3.project__header__text{font-size: 1.25rem;}
   div.project div.project__overlay div.project__description p {font-size: 1rem;}
-  .text-box--padding-bottom{padding-bottom: 240px;padding-bottom: 240px;padding-bottom: 10rem;}
 
 /* navbar */
   .navbar--desktop {display: none;}
