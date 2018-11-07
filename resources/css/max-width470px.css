@@ -46,7 +46,7 @@
   .experience {margin: 0;padding: 0;}
 
   /* apple background fix */
-  .container-fluid__banner {
+  #banner {
     background-position: center;
     background-attachment: local;
   }

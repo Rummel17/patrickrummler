@@ -5,7 +5,7 @@
 
   /* navbar */
 .navbar {
-  top:15%;
+  display: none;
 }
 
 .navbar ul.nav.nav-tabs li, .arrow {width: 6rem;}
@@ -24,7 +24,7 @@
   }
 
   hr {margin: 2.5rem 0rem 1.5rem 0rem;}
-  .row {width: 68%;}
+  .row {width: 100%;}
   section {padding-bottom: 2rem;}
   .row--margintop {margin-top: .5rem;}
   .text--align {text-align: left;}
