@@ -1,6 +1,6 @@
 /* Portrait phones min400 */
 
-@media all and (min-width:400px) and (max-width: 469px) {
+@media all and (min-width:350px) and (max-width: 469px) {
 
 h1 {font-size: 2.5rem}
 
@@ -19,4 +19,9 @@ div.language-box {
   top:2%;
   left:50%;
   margin-left:-75px;
+}
+
+section, footer {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

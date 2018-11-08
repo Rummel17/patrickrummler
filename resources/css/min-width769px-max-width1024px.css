@@ -66,3 +66,8 @@ div.language-box {
   position: absolute;
   top:2%;
 }
+
+section, footer {
+  padding-left: 3rem;
+  padding-right: 4rem;
+}
