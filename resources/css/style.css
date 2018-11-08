@@ -48,6 +48,7 @@ body {
   --main-ft-color-red: rgba(110,23,25, 1);/*das rot */
   --border-color-red: rgba(200,23,25,1);/*border rot*/
   --sub-ft-color-blue: rgba(6,39,59,1);/*footer etc.*/
+  --sub-ft-color-blueHover: #0C537F;/*footer, hover navbar etc.*/
   --sub4-ft-colorfaded-blue: rgba(6,40,61,0.9);/* blue faded */
   --sub5-ft-colorfaded1-blue: rgba(6,40,61,0.8);/* blue faded */
   --sub5-ft-colorfaded2-blue: rgba(6,40,61,0.7);/* blue faded */
@@ -392,6 +393,11 @@ this is to fix this */
   border-radius: 4px 4px 0px 0px;
 }
 
+a div.arrow:hover {
+  background-color: var(--border-color-red);
+  -webkit-transition: background-color 150ms linear 0ms;transition: background-color 150ms linear 0ms;
+}
+
 /* active a:hover is in there because of a border that comes from the bootstrap css */
 ul.nav.nav-tabs, ul.nav.nav-tabs a, .navbar ul.nav li.active a:hover {
   color: var(--sub5-ft-colorwhite);
@@ -404,8 +410,9 @@ ul.nav.nav-tabs, ul.nav.nav-tabs a, .navbar ul.nav li.active a:hover {
 adjusted for the round corners. Eventually, I found it with dev Tools
 and all I needed to do was write the path down*/
 ul.nav li a:hover {
-    background-color: var(--main-ft-color-red);
+    background-color: var(--sub-ft-color-blueHover);
     border-radius: 0px 0px 4px 4px;
+    -webkit-transition: background-color 150ms linear 0ms;transition: background-color 150ms linear 0ms;
 }
 
 .nav--bordertop {border-radius: 4px 4px 0px 0px;}
