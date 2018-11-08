@@ -445,7 +445,6 @@ ul.nav li a:hover {
 .row-width-30 {-webkit-box-flex: 1;-ms-flex: 1 1 30%;flex: 1 1 30%;}
 .row--margintop {margin-top: 16px;margin-top: 16px;margin-top:1rem;}
 .row--margintop2 {margin-top: 32px;margin-top: 32px;margin-top:2rem;}
-.col--margin {margin: 16px 16px;margin: 16px 16px;margin: 1rem 1rem;}
 
 .col--picture {
   width: 25%;
@@ -460,11 +459,6 @@ height: auto;
 /*to adjust picture with eye */
 .col-sm-1 {
   margin-right: 15px;
-}
-
-.col-sm-4, .col-sm-6, .col-sm-12 {
-  margin-left: 16px;
-  margin-left: 1rem;
 }
 
 .experience {
