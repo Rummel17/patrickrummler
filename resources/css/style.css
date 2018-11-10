@@ -835,9 +835,13 @@ footer {
   padding-top: 0.2rem;
 }
 
-h2.ie {
-  display: hide;
+
+/* IE 10+11 users */
+
+h2.hideBrowser {
+  display: none;
 }
+
 @media all and (-ms-high-contrast: none){
     /* IE10+ CSS */
   header, section, footer{
