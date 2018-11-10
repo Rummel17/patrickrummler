@@ -836,7 +836,7 @@ footer {
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  body{
+  header, section, footer{
     display: none;
   }
 
