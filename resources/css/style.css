@@ -835,6 +835,7 @@ footer {
   padding-top: 0.2rem;
 }
 
-body {
+/* for IE Users*/
+h1.ie {
   display: none;
 }
