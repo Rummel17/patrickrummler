@@ -834,3 +834,7 @@ footer {
   font-size: 18px;font-size: 18px;font-size: 2rem;
   padding-top: 0.2rem;
 }
+
+body {
+  display: none;
+}
