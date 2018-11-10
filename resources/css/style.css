@@ -848,7 +848,7 @@ h2.hideBrowser {
     display: none;
   }
 
-  h2.ie {
+  h2.hideBrowser {
     display: block;
   }
 }

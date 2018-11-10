@@ -2,6 +2,6 @@ header, section, footer{
   display: none;
 }
 
-h2.ie {
+h2.hideBrowser {
   display: block;
 }
