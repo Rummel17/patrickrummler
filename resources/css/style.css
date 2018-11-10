@@ -835,7 +835,7 @@ footer {
   padding-top: 0.2rem;
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none){
   header, section, footer{
     display: none;
   }
