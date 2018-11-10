@@ -836,6 +836,6 @@ footer {
 }
 
 /* for IE Users*/
-h1.ie {
+h2.ie {
   display: none;
 }
