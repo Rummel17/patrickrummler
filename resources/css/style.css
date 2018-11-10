@@ -835,6 +835,9 @@ footer {
   padding-top: 0.2rem;
 }
 
+h2.ie {
+  display: hide;
+}
 @media all and (-ms-high-contrast: none){
     /* IE10+ CSS */
   header, section, footer{
