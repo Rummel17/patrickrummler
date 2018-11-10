@@ -2,6 +2,6 @@ section, footer, header{
   display: none;
 }
 
-h1.ie {
+h2.ie {
   display: block;
 }
