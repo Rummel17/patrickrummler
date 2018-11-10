@@ -104,9 +104,18 @@ a.eupopup-closebutton:hover{
   text-decoration: underline;
 }
 
-.eupopup-body a:hover {
+.eupopup-body a:hover, .eupopup-body a:active {
   color: var(--redHover);
   transition: all 0.2s ease-in-out;
+}
+.eupopup-body a:visited {
+  color: var(--redHover);
+}
+
+
+/*a.link:hover only for the intext links not the hyperlinks*/
+a:link, a:visited, a.link:hover, a:active {
+  text-decoration: none;
 }
 
 .eupopup-buttons {
@@ -178,4 +187,127 @@ body .eupopup-style-compact .eupopup-buttons {
 
 body .eupopup-style-compact .eupopup-button {
 	margin: 0 5px;
+}
+
+
+/*Cookie Page*/
+
+.home {
+  color: var(--sub5-ft-colorwhite);
+  font-size: 1.125rem;
+  padding: 1rem 0rem;
+  font-weight: 500;
+}
+section.grid-container.container0 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 25rem));
+  justify-content: center;
+  padding: 0rem 1rem 2rem 1rem;
+  grid-gap: 0rem 1rem;
+}
+
+.grid-item1, .grid-item2 {
+  padding: 1rem;
+  text-align: center;
+  background-color: var(--sub-ft-color-blue);
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.grid-item h2{
+  color: var(--main-bg-color-white);
+}
+.grid-item h1 {
+  font-size: 2rem;
+  border: none;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+section.grid-container.container0 a{
+  text-decoration: none;
+}
+a:hover .grid-item1, a:hover .grid-item2 {
+  text-decoration: none;
+  background-color: var(--main-ft-color-red);
+  -webkit-transition: background-color 150ms linear 0ms;transition: background-color 150ms linear 0ms;
+}
+
+.grid-item {
+  height: auto;
+}
+section.grid-container {
+  display: grid;
+  grid-template-columns: repeat(1, 10% 1fr 1fr 10%);
+  background-color: var(--main-bg-color-white);
+}
+
+section.grid-container.container1{
+  background-color: var(--main-bg-color-white);
+  /* padding: 2rem 0; */
+}
+section.grid-container.container2 {
+  background-color: var(--sub5-ft-colorwhite);
+}
+
+.grid-item3, .grid-item4, .grid-item5{
+  grid-column: 2 /4;
+}
+
+.cookieList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 20rem));
+  justify-content: center;
+}
+
+.cookie {
+  margin-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.cookie1 {
+    border-left: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+
+.cookie2 {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+}
+.cookie3 {
+  border-right: 1px solid #f0f0f0;
+  border-left: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.cookie h5 {
+  text-align: left;
+  background-color: var(--sub5-ft-colorwhite);
+  border-bottom: 1px solid #f0f0f0;
+  padding: .5rem;
+  font-size: 1rem;
+  margin: 0;
+}
+.cookie p{
+  font-size: .9rem;
+  padding: 0rem .5rem;
+}
+.cookie p.bold {
+  font-weight: 600;
+}
+.cookie2 a:link {
+  color:var(--main-ft-color-red);
+}
+
+.grid-item a {
+}
+
+.grid-item a:hover {
+  color:var(--main-ft-color-red);
+  text-decoration: underline;
 }

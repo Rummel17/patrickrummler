@@ -84,7 +84,7 @@ h2 {
   margin: 0px 0px 0px 0px;
   margin: 0px 0px 0px 0px;
   margin: 0rem 0rem 0rem 0rem;
-  letter-spacing: -1px;
+  letter-spacing: -.5px;
 }
 
 /* h2 font-size for headings Projects, Skils etc. */
@@ -107,7 +107,7 @@ h3 {
   margin: 0px 0px 8px 0px;
   margin: 0px 0px 8px 0px;
   margin: 0rem 0rem 0.5rem 0rem;
-  letter-spacing: -0.1px;
+  letter-spacing: 0px;
 }
 /*h3 smaller font */
 .text-box__text--small{font-size: 18px;font-size: 18px;font-size: 1.2rem;}
@@ -121,13 +121,13 @@ h4 {
 }
 
 p {
-  color: var(--sub4-ft-colorfaded-blue);
+  color: var(--sub5-ft-colorfaded2-blue);
   font-size: 15px;
   font-size: 15px;
   font-size: 1.125rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.9;
-  letter-spacing:;
+  letter-spacing:0.5px;
   margin: 8px 0px 0px 0px;
   margin: 8px 0px 0px 0px;
   margin: 0.5rem 0rem 0rem 0rem;
@@ -222,6 +222,7 @@ margin: 1rem 0rem 1rem 0rem;
   color: var(--sub5-ft-colorfaded1-blue);
   font-weight:600;
 }
+
 /*a.link:hover only for the intext links not the hyperlinks*/
 a:link, a:visited, a.link:hover, a:active {
   text-decoration: none;
@@ -785,7 +786,7 @@ footer {
   background-color: var(--sub-ft-color-blue);
   height: 368px;
   height: 368px;
-  height: 23rem;
+  height: 25rem;
   padding: 16px 0px;
   padding: 16px 0px;
   padding: 1rem 0rem;
@@ -815,12 +816,21 @@ footer {
   width: 2.5rem;
   padding: 8px 0px;
   padding: 8px 0px;
-  padding: 0.5rem 0rem;
+  padding: 0.3rem 0rem;
   margin: 0px 16px;
   margin: 0px 16px;
-  margin: 0rem 1rem;
+  margin: 0rem 1.5rem;
 }
-.contact__icon {-webkit-transition: background-color 200ms linear 0ms;transition: background-color 250ms linear 0ms;}
-.contact__icon:hover{background-color:#d5d5d5;}
-.contact__mail, .contact__facebook {color: var(--sub-ft-color-blue);}
-.contact__mail {font-size: 18px;font-size: 18px;font-size: 1.125rem;}
+.fa-facebook-square, .fa-instagram {
+  font-size: 2.5rem;
+  color: var(--sub5-ft-colorwhite);
+}
+.contact__icon, .facebook__icon, .instagram__icon  {-webkit-transition: background-color 100ms linear 0ms;transition: background-color 100ms linear 0ms;}
+.facebook__icon i, .instagram__icon i  {-webkit-transition: color 100ms linear 0ms;transition: color 100ms linear 0ms;}
+.contact__icon:hover {background-color:var(--border-color-red);}
+.fa-facebook-square:hover, .fa-instagram:hover {color:var(--border-color-red);}
+.contact__mail{color: var(--sub-ft-color-blue);}
+.contact__mail {
+  font-size: 18px;font-size: 18px;font-size: 2rem;
+  padding-top: 0.2rem;
+}
