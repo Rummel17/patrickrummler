@@ -836,6 +836,7 @@ footer {
 }
 
 @media all and (-ms-high-contrast: none){
+    /* IE10+ CSS */
   header, section, footer{
     display: none;
   }
