@@ -4,4 +4,9 @@ header, section, footer{
 
 h2.hideBrowser {
   display: block;
+  text-align: center;
+  color: var(--border-color-red);
+  font-size: 5rem;
+  line-height: 200%;
+
 }
